@@ -47,8 +47,15 @@ a small {
 
 .wrapper {
   width:860px;
+  height:500px;
   margin:0 auto;
 }
+
+
+#footer{
+width:50%;
+clear:both;
+ }
 
 blockquote {
   border-left:1px solid #e5e5e5;
@@ -98,7 +105,7 @@ img {
 header {
   width:270px;
   float:left;
-  position:fixed;
+  
 }
 
 header ul {
@@ -177,9 +184,9 @@ hr {
 }
 
 footer {
-  width:270px;
+ 
   float:left;
-  position:fixed;
+ 
   bottom:50px;
 }
 
