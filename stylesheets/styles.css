@@ -5,7 +5,8 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
-  background-image: url("../MyImages/cats.jpg");
+  background-image: url("../MyImages/lake.jpg");
+  background-position:-100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,6 +55,7 @@ a small {
   padding:10px;
   margin-top:10px;
   margin-bottom:10px;
+  opacity:0.8;
 }
 
 
