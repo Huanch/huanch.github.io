@@ -74,5 +74,30 @@ height:480px;
  
  
   }
+
+#map-canvas 
+{
+  width: 500px;
+  height: 400px;
+    background-color: #CCC;
+}
+
+#accordion
+{
+  width: 500px;
+}
   
- 
+#place
+{
+  background: #2c3e50;
+}
+
+#place h1
+{
+  color: #ffffff;
+}
+ #education
+ {
+  height: 500px;
+ }
+

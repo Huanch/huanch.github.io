@@ -21,21 +21,7 @@
   ga('send', 'pageview');
 
 </script>
-
-<!-- Load google map API -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
  <script>
-
-  function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(62.60118, 29.76316),
-          zoom: 6,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
 
          $(function() {
     $( "#accordion" ).accordion({
@@ -89,16 +75,16 @@
 </div>
 </div>
 </div>
-<div id="education" class="container">
+<div class="container">
   <div class="row">
-  <div class="col-md-0" id="myScroll">
+  <div class="col-md-3" id="myScroll">
   
   
 </div>
-<div class="col-md-12">
+<div class="col-md-9">
 
 
-<div>
+<div id="education">
 	<h1>Education</h1>
   <p>Master of computer science, University of Eastern Finland</p>
   <p>Bachelor of computer science, minor in electronics and business, University of Eastern Finland</p>
@@ -129,18 +115,11 @@
 
 </div>
 
-
 </div>
 	  
 </div>
     </div> <!-- /container -->
-<div id="place" class="row">
-  
-<div id="map-canvas" class="col-md-5"></div>
-<div class="col-md-7">
-<h1>Where I am now</h1>
-</div>
-</div>
+
 	<footer class="footer">
       <div class="container">
         <p class="text-muted">By Huan Chen</p>
