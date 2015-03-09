@@ -37,37 +37,50 @@
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 
-         $(function() {
-    $( "#accordion" ).accordion({
+$(function() {
+$( "#accordion" ).accordion({
       collapsible:true,
       active:false
     });
-  });
+
+
+$(window).on('scroll', function(e) {
+        var offset;
+        offset = window.pageYOffset || window.scrollTop || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        if (offset > 50) {
+          $("#intro").css("padding-top", '300px');
+          return $("#header").addClass('navbar navbar-default fixed');
+        } else {
+          $("#intro").css("padding-top", '100px');
+          return $("#header").removeClass('navbar navbar-default fixed');
+        }
+      });
+});
+
+
+
       </script>
   </head>
   
     
   <body data-spy="scroll" data-target="#myScroll">
 
-    <div class="navbar  navbar-default">
+
+
+
+
+<div id="wrapper">
+<div  id="header" class="navbar">
   
   <div class="container">
-    <ul class="nav navbar-nav">
+    <ul class="nav nav-pills">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="picture.html">Photo</a></li>
      
     </ul>
+  </div>
 </div>
-
-
-</div>
-
-
-
-</div>
-
-<div id="wrapper">
-  <div id="intro" class="container">
+<div id="intro" class="container">
 <div class="row">
 <div class="col-md-4">
  <img class="avatar" src="profile.jpg" >
@@ -87,23 +100,19 @@
 
     
 </div>
+<div class="row">
+<div class="col-md-12 bg_intro">
+<h3>Beautiful winter of Finland</h3>
+</div>
+</div>
 </div>
 </div>
 <div id="education" class="container">
-  <div class="row">
-  <div class="col-md-0" id="myScroll">
-  
-  
-</div>
-<div class="col-md-12">
-
-
-<div>
-	<h1>Education</h1>
+	<h1 class="section_header">Education</h1>
   <p>Master of computer science, University of Eastern Finland</p>
   <p>Bachelor of computer science, minor in electronics and business, University of Eastern Finland</p>
   <p>Bachelor of information technology in telecommunication, Savonia university of applied science</p>
-
+</br>
  <div id="accordion">
   <h3>Computer science,University of Eastern Finland</h3>
   <div>
@@ -125,15 +134,13 @@
     
   </div>
  
-</div>
-
-</div>
 
 
-</div>
-	  
-</div>
-    </div> <!-- /container -->
+
+
+	  </div>
+
+</div> <!-- /container -->
 <div id="place" class="row">
   
 <div id="map-canvas" class="col-md-5"></div>

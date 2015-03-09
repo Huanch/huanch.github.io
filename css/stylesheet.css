@@ -9,12 +9,41 @@ body {
   margin-bottom: 60px;
 }
 
+p
+{
+  font-family: georgia;
+  color: #777;
+}
+
+#header.fixed {
+position: fixed;
+z-index: 10;
+width: 100%;
+border-radius: 0px;
+}
+
+.bg_intro
+{
+  padding-top: 100px;
+  text-align: right;
+}
+
+.section_header
+{
+  text-shadow: 1px 2px #ffffff,2px 4px #919695;
+}
+
+footer
+{
+  padding: 20px;
+}
+
 .navbar{
   margin-bottom: 0px;
 }
 
 #wrapper{
-   background: url(../img/bg1.JPG) no-repeat center center fixed; 
+   background: url(../img/bg2.JPG) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,7 +53,7 @@ body {
 }
 
 #intro{
-  height: 400px;
+  height: 800px;
   padding-top: 100px;
 } 
 
@@ -51,6 +80,12 @@ width: 30px;
    
  display: inline;
     }
+
+
+#education h1
+{
+  margin-bottom: 30px;
+}
     
 .footer {
  
