@@ -30,7 +30,7 @@ border-radius: 0px;
 
 .section_header
 {
-  text-shadow: 1px 2px #ffffff,2px 4px #919695;
+  
 }
 
 footer
@@ -136,3 +136,12 @@ height:480px;
   height: 500px;
  }
 
+.panel-default>.panel-heading{
+  background-color: #FF8F00;
+}
+  
+.panel-title{
+
+font-family:"Roboto",sans-serif;
+color: #fff;
+}
