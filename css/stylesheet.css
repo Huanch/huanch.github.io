@@ -6,13 +6,30 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+ /* margin-bottom: 60px;*/
 }
 
 p
 {
   font-family: georgia;
   color: #777;
+}
+
+footer
+{
+  background-color: #453425;
+  padding-top: 20px;
+}
+
+footer p,footer h3
+{
+  color: #fff;
+  font-family:"Roboto",sans-serif;
+}
+
+ul
+{
+  padding: 0;
 }
 
 #header.fixed {
@@ -33,10 +50,7 @@ border-radius: 0px;
   
 }
 
-footer
-{
-  padding: 20px;
-}
+
 
 .navbar{
   margin-bottom: 0px;
@@ -89,12 +103,12 @@ width: 30px;
     
 .footer {
  
-  position: absolute;
+ /* position: absolute;*/
 bottom: 0px;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+ 
+  background-color: #ee6e73;
 }
 
 .gallery{
@@ -112,9 +126,9 @@ height:480px;
 
 #map-canvas 
 {
-  width: 500px;
-  height: 400px;
-    background-color: #CCC;
+  width: 400px;
+  height: 300px;
+  background-color: #CCC;
 }
 
 #accordion
@@ -122,10 +136,6 @@ height:480px;
   width: 500px;
 }
   
-#place
-{
-  background: #2c3e50;
-}
 
 #place h1
 {
@@ -133,7 +143,7 @@ height:480px;
 }
  #education
  {
-  height: 500px;
+  margin-bottom: 200px;
  }
 
 .panel-default>.panel-heading{
@@ -144,4 +154,34 @@ height:480px;
 
 font-family:"Roboto",sans-serif;
 color: #fff;
+}
+
+#footer{
+  
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgba(51, 51, 51, 0.07);
+}
+
+#contact
+{
+  padding-top: 60px;
+}
+
+a.btn
+{
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+a.btn:focus, a.btn:hover
+{
+  background-color: rgba(51, 51, 51, 0.2);
+
+}
+
+.email
+{
+  color: #777272
 }
