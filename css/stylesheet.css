@@ -19,12 +19,18 @@ footer
 {
   background-color: #453425;
   padding-top: 20px;
+
 }
 
-footer p,footer h3
+footer p
 {
   color: #fff;
-  font-family:"Roboto",sans-serif;
+  
+}
+
+footer #place li
+{
+  font-family: "Roboto",sans-serif;
 }
 
 ul
@@ -131,6 +137,12 @@ height:480px;
   background-color: #CCC;
 }
 
+#map-canvas p
+{
+  color: blue;
+}
+
+
 #accordion
 {
   width: 500px;
@@ -165,7 +177,7 @@ color: #fff;
 
 #contact
 {
-  padding-top: 60px;
+  padding-top: 340px;
 }
 
 a.btn
@@ -185,3 +197,59 @@ a.btn:focus, a.btn:hover
 {
   color: #777272
 }
+
+
+
+#tabs { 
+    background: transparent; 
+    border: none; 
+} 
+
+#tabs.ui-tabs-nav .ui-state-default { 
+    background: transparent; 
+    border: none; 
+    padding: 0px;
+} 
+#tabs.ui-tabs-nav .ui-state-active { 
+    background: transparent; 
+    border: none; 
+} 
+
+#tabs ul.ui-widget-header {
+border:none;
+background:transparent;
+}
+
+
+
+footer #tabs li.ui-state-active a, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active 
+{
+border: none;
+background: transparent;
+color: #fff;
+}
+
+ #tabs li.ui-state-default, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+border: none;
+background: transparent;
+
+}
+
+footer #place .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+color: #A85050;
+text-decoration: none;
+}
+
+#tabs li a
+{
+  outline-color: transparent;
+}
+
+#place .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+float: left;
+padding:0px;
+text-decoration: none;
+}
+
+
+
