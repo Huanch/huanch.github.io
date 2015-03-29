@@ -84,8 +84,24 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 //$('#myModal').modal({show:true});
+function show_avatar()
+{
+	$('.avatar').show();
+}
+
+function show_intro()
+{
+	$('.introduction').show();
+	$( ".introduction" ).animate({ "right": "+=150px" }, "slow" );
+}
+
+
 
 $(document).ready(function() {
+
+
+	setTimeout(show_avatar, 1000);
+	setTimeout(show_intro, 2000);
 
 	$('.thumbnail').click(function(){
   	$('.modal-body').empty();
@@ -110,7 +126,7 @@ $(window).on('scroll', function(e) {
         var offset;
         offset = window.pageYOffset || window.scrollTop || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         if (offset > 50) {
-          $("#intro").css("padding-top", '300px');
+          $("#intro").css("padding-top", '200px');
           return $("#header").addClass('navbar navbar-default fixed');
         } else {
           $("#intro").css("padding-top", '100px');
@@ -148,9 +164,11 @@ $(window).on('scroll', function(e) {
 <div class="col-md-4">
  <img class="avatar" src="profile.jpg" >
 </div>
-<div class="col-md-5">
+<div class="col-md-2"></div>
+
+<div class="col-md-6 introduction">
 <h2 >Huan Chen</h2>
-    <p>Computer science,University of Eastern Finland</p>
+ <p>Computer science,University of Eastern Finland</p>
     
     
 
@@ -161,10 +179,20 @@ $(window).on('scroll', function(e) {
 </div>
 <div class="row">
 <div class="col-md-12 bg_intro">
-<h3>Beautiful winter of Finland</h3>
 </div>
 </div>
 </div>
+</div>
+<div id="wuhan">
+<div id="wuh" class="container">
+<div class="intro_banner"><span>I am from Wuhan, China. A big city in the middle of China.</span></div>
+
+</div>	
+</div>
+<div id="finland">
+<div id="fi" class="container">
+<div class="intro_banner">I have studied in Finland</div> 
+</div>	
 </div>
 <div id="education" class="container">
   <h1 class="section_header">Education</h1>
@@ -214,7 +242,8 @@ $(window).on('scroll', function(e) {
 </div>
 </div>
 </div> <!-- /container -->
-<div id="gallery"class="container">
+
+<div id="gallery" class="container">
 <h1 class="section_header">Photo</h1><br>
 	<div class="row">
       <div class="col-lg-3 col-sm-4 col-6"><a title="Kitties"><img src="MyImages/cats.jpg" class="thumbnail img-responsive"></a></div>

@@ -38,12 +38,22 @@ ul
   padding: 0;
 }
 
+.panel
+{
+   
+}
+
 #header.fixed {
 position: fixed;
 z-index: 10;
 width: 100%;
 border-radius: 0px;
 }
+
+#intro{
+  height: 500px;
+  padding-top: 100px;
+} 
 
 .bg_intro
 {
@@ -63,43 +73,72 @@ border-radius: 0px;
 }
 
 #wrapper{
-   background: url(../img/bg2.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin: 0px;
+background-color: #65C6BB;
+background-size: 100%;
      
 }
 
-#intro{
-  height: 800px;
-  padding-top: 100px;
-} 
+
 
 #intro h2,#intro p
 {
   color: #ffffff;
 }
 
-img.avatar{
+img.avatar
+{
 height: 240px;
 width: 240px;
 border-radius: 240px;
+display: none;
  
-  }
+}
+
+.introduction
+{
+  display: none;
+}
   
-img.social_icon{
+img.social_icon
+{
   
-  height: 30px;
+height: 30px;
 width: 30px;
   
-   }
+}
    
-   ul.social_link li{
+ul.social_link li
+{
    
  display: inline;
-    }
+}
+
+#wuhan
+{
+  background: url("../wh.jpg") no-repeat fixed;
+  padding-top:100px;
+  padding-bottom: 300px;
+  background-size: 100%;
+}
+
+
+
+.intro_banner
+{
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #FF8F00;
+  opacity: 0.7;
+}
+
+#finland
+{
+  background: url("../fin.jpg") no-repeat fixed;
+  padding-top:200px;
+  padding-bottom: 200px;
+  background-size: 100%;
+}
 
 
 
@@ -107,6 +146,9 @@ width: 30px;
 {
   margin-bottom: 30px;
 }
+
+
+
     
 .footer {
  
