@@ -94,9 +94,11 @@ display: none;
  
 }
 
-.introduction
+#introduction
 {
   display: none;
+  
+
 }
   
 img.social_icon
@@ -296,7 +298,13 @@ text-decoration: none;
 }
 
 .modal-dialog {width:600px;}
-.thumbnail {margin-bottom:6px;}
+
+.thumbnail 
+{
+  margin-bottom:0px;
+
+
+}
 
     
 .blur {
@@ -313,8 +321,41 @@ text-decoration: none;
 
 #gallery
 {
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 
+#gallery img:hover
+{
+  
+}
 
+ #gallery .img_hover
+{
+  
+  overflow:visible;
+   
+  box-sizing:border-box;
+ 
+  position: relative;
+  top: -40px;
+  background: rgba(255, 255, 255, 0.5);
+  /*border: 20px solid rgba(255, 255, 255, 0.5);*/
+
+  text-align:center;
+  padding: 10px;
+  
+
+}
+
+#gallery .mask:hover
+{
+ 
+ 
+  /*border: 40px solid rgba(0,0,0,0.7);*/
+}
+
+body
+{
+  margin:0px;
+}
 

@@ -10,11 +10,13 @@
     
 	<link href="css/stylesheet.css" rel="stylesheet" media="screen">
   <link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
        <script src="js/bootstrap.min.js"></script>
        <script src="js/modal.js"></script>
-      <script>
+
+
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -91,25 +93,152 @@ function show_avatar()
 
 function show_intro()
 {
-	$('.introduction').show();
-	$( ".introduction" ).animate({ "right": "+=150px" }, "slow" );
+	
+	$('#introduction').show();
+	$( "#introduction" ).animate({ "right": "+=150px" }, "slow" );
+	
+	
 }
 
 
 
 $(document).ready(function() {
 
+function show_modal(){
+
+  	$('.modal-body').empty();
+  	var title = $(this).parents('div').children('a').attr("title");
+  	$('.modal-title').html(title);
+  	$($(this).parents('div').html()).appendTo('.modal-body');
+  	$('#myModal').modal({show:true});
+}
+
+/*function img_hover(){
+	
+		var height=$(this).height();
+		var width=$(this).width();
+		var title = $(this).parent('a').attr("title");
+
+		$(this).parent().next().css("height",function(){
+        return height*0.2+4;
+        });
+
+        $(this).parent().next().css("top",function(){
+        return height*0.8+4;
+        });
+
+        $(this).parent().next().css("width",function(){
+        return width+8;
+        });
+
+        $(this).parent().next().css("background","rgba(255, 255, 255, 0.5)");
+
+        $(this).parent().next().html(title);
+
+
+	
+}
+
+function img_hover_off(){
+	
+
+        $(this).parent().next().css("background","rgba(255, 255, 255, 0)");
+
+        $(this).parent().next().html("");
+
+
+	
+}
+
+	
+//$("#ph1").mouseenter(img_hover
+	
+
+	/*function(){ 
+
+		var height=$(this).height();
+		var width=$(this).width();
+
+		$(this).parent().next().css("height",function(){
+        return height*0.4;
+        });
+
+        $(this).parent().next().css("top",function(){
+        return height*0.6+5;
+        });
+
+        $(this).parent().next().css("width",function(){
+        return width+8;
+        });
+
+
+
+	}
+);*/
+
+//$("#ph1").mouseleave(img_hover_off);
+
+//$("#ph2").mouseover(img_hover);
+
+$('.thumbnail').mouseover(
+
+	function(){
+
+		 $(this).parent().next().addClass('img_hover');
+		 var title = $(this).parents('div').children('a').attr("title");
+  	     $(this).parent().next().html(title);
+
+	}
+
+
+	);
+
+$('.thumbnail').mouseout(
+
+	function(){
+
+		 $(this).parent().next().removeClass('img_hover');
+		 $(this).parent().next().html("");
+
+	}
+
+
+	);
+
+$('.mask').mouseover(
+
+	function(){
+
+
+		 $(this).addClass('img_hover');
+		 var title = $(this).parents('div').children('a').attr("title");
+  	     $(this).html(title);
+
+
+	}
+
+
+	);
+
+$('.mask').mouseout(
+
+	function(){
+
+		 $(this).removeClass('img_hover');
+		 $(this).html("");
+
+	}
+
+
+	);
 
 	setTimeout(show_avatar, 1000);
 	setTimeout(show_intro, 2000);
 
-	$('.thumbnail').click(function(){
-  	$('.modal-body').empty();
-  	var title = $(this).parent('a').attr("title");
-  	$('.modal-title').html(title);
-  	$($(this).parents('div').html()).appendTo('.modal-body');
-  	$('#myModal').modal({show:true});
-});
+
+
+$('.thumbnail').click(show_modal);
+$('.mask').click(show_modal);
  
 
 	//$('.modal-body').empty();
@@ -127,16 +256,33 @@ $(window).on('scroll', function(e) {
         offset = window.pageYOffset || window.scrollTop || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         if (offset > 50) {
           $("#intro").css("padding-top", '200px');
-          return $("#header").addClass('navbar navbar-default fixed');
+          $("#header").addClass('navbar navbar-default fixed');
         } else {
           $("#intro").css("padding-top", '100px');
-          return $("#header").removeClass('navbar navbar-default fixed');
+          $("#header").removeClass('navbar navbar-default fixed');
         }
       });
 
+
+/*$(".thumbnail").mouseover(
+		function(){ 
+		$(".thumbnail").parent().next().css("height",function(){
+        return $("#ph").height()*0.4;
+        });
+
+        $(".thumbnail").parent().next().css("top",function(){
+        return $("#ph").height()*0.6-5;
+        });
+
+        $(".thumbnail").parent().next().css("width",function(){
+        return $("#ph").width();
+        });
+
+
+	});*/
+
+
 });
-
-
 
 
 
@@ -147,7 +293,7 @@ $(window).on('scroll', function(e) {
 </script>
 </head>
   
-<body data-spy="scroll" data-target="#myScroll">
+<body>
 <div id="wrapper">
 <div  id="header" class="navbar">
   
@@ -165,13 +311,11 @@ $(window).on('scroll', function(e) {
  <img class="avatar" src="profile.jpg" >
 </div>
 <div class="col-md-2"></div>
+<div class="col-md-6" id="introduction">
 
-<div class="col-md-6 introduction">
 <h2 >Huan Chen</h2>
- <p>Computer science,University of Eastern Finland</p>
+<p>Computer science,University of Eastern Finland</p>
     
-    
-
 </div>
 
 
@@ -246,7 +390,8 @@ $(window).on('scroll', function(e) {
 <div id="gallery" class="container">
 <h1 class="section_header">Photo</h1><br>
 	<div class="row">
-      <div class="col-lg-3 col-sm-4 col-6"><a title="Kitties"><img src="MyImages/cats.jpg" class="thumbnail img-responsive"></a></div>
+      <div class="col-lg-3 col-sm-4 col-6 " ><a title="Kitties" class=""><img src="MyImages/cats.jpg" class="thumbnail img-responsive" id="ph1"></a><div class="mask"></div></div>
+      <div class="col-lg-3 col-sm-4 col-6 " ><a title="Krakow" class=""><img src="MyImages/krakow.jpg" class="thumbnail img-responsive" id="ph2"></a><div class="mask"></div></div>
       
     </div>
 
@@ -300,8 +445,7 @@ $(window).on('scroll', function(e) {
                 <h4 class="modal-title">Confirmation</h4>
             </div>
             <div class="modal-body">
-                <p>Do you want to save changes you made to document before closing?</p>
-                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
