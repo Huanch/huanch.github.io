@@ -11,7 +11,7 @@ body {
 
 p
 {
-  font-family: georgia;
+  font-family: 'Lato', sans-serif;
   color: #777;
 }
 
@@ -222,7 +222,7 @@ color: #fff;
 
 #contact
 {
-  padding-top: 340px;
+  /*padding-top: 340px;*/
 }
 
 a.btn
@@ -317,6 +317,11 @@ text-decoration: none;
     -o-filter: blur(2px);
     -ms-filter: blur(2px);
     filter: blur(2px);
+}
+
+#gallery_section
+{
+  background-color: ;
 }
 
 #gallery
