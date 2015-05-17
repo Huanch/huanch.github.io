@@ -77,6 +77,7 @@ border-radius: 0px;
 #wrapper{
 background-color: #65C6BB;
 background-size: 100%;
+padding-bottom: 20px;
      
 }
 
@@ -101,6 +102,25 @@ display: none;
   display: none;
   
 
+}
+
+#scroll-down
+{
+  
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.icon-center
+{
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
   
 img.social_icon
@@ -136,6 +156,13 @@ ul.social_link li
   opacity: 0.7;
 }
 
+.animated-intro_banner {
+  -webkit-animation-duration: 2s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 #finland
 {
   background: url("../fin.jpg") no-repeat fixed;
@@ -149,6 +176,24 @@ ul.social_link li
 #education h1
 {
   margin-bottom: 30px;
+}
+
+#uef
+{
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+}
+
+#savonia
+{
+  -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
+}
+
+#aalen
+{
+  -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+    animation-delay: 4s;
 }
 
 

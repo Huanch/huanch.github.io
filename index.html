@@ -7,13 +7,17 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<!-- Custom styles for this template -->
+    <link href="css/stylesheet.css" rel="stylesheet" media="screen">
+     <link href="css/animate.css" rel="stylesheet" media="screen">
+	<!-- Jquery UI stylesheet-->
+	<link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <!--Jquery UI-->
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     
-	<link href="css/stylesheet.css" rel="stylesheet" media="screen">
-  <link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-       <script src="js/bootstrap.min.js"></script>
-       <script src="js/modal.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/modal.js"></script>
+    
 
 
 <script>
@@ -29,6 +33,7 @@
 
 <!-- Load google map API -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
+
  <script>
 
  function initialize() {
@@ -103,6 +108,15 @@ function show_intro()
 
 
 $(document).ready(function() {
+
+	$('#scroll-down').click(function(){
+		var target=$(this).parent('a').attr('href');
+	 $('html, body').animate({
+	 	
+        scrollTop: $(target).offset().top-100
+    }, 1000);
+    return false;
+	})
 
 function show_modal(){
 
@@ -243,16 +257,13 @@ $('.mask').click(show_modal);
 
 	//$('.modal-body').empty();
 
-$( "#accordion" ).accordion({
-      collapsible:true,
-      active:false
-    });
+
 
 $("#tabs").tabs();
 
 
 $(window).on('scroll', function(e) {
-        var offset;
+        var offset,scrollTop;
         offset = window.pageYOffset || window.scrollTop || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         if (offset > 50) {
           $("#intro").css("padding-top", '200px');
@@ -261,6 +272,16 @@ $(window).on('scroll', function(e) {
           $("#intro").css("padding-top", '100px');
           $("#header").removeClass('navbar navbar-default fixed');
         }
+
+        scrollTop=$(window).scrollTop();
+        var windowHeight=$(window).height();
+         
+     
+
+         if($('.panel').offset().top<(scrollTop+windowHeight))
+         	$('.panel').addClass('animated fadeIn');
+
+
       });
 
 
@@ -321,11 +342,10 @@ $(window).on('scroll', function(e) {
 
     
 </div>
-<div class="row">
-<div class="col-md-12 bg_intro">
 </div>
-</div>
-</div>
+
+<a href="#wuhan"><div id="scroll-down"><span class="glyphicon glyphicon-chevron-down icon-center" aria-hidden="true"></span></div></a>
+
 </div>
 <div id="wuhan">
 <div id="wuh" class="container">
@@ -344,11 +364,11 @@ $(window).on('scroll', function(e) {
 
    <div class="row">  
    <div class="col-md-4">
- <div class="panel panel-default">
+ <div class="panel panel-default" id="uef">
       <div class="panel-heading clearfix">
         <h3 class="panel-title pull-left">University of Eastern Finland</h3>
       </div>
-      <div class="panel-body">
+      <div class="panel-body" >
        <p>Master and Bachelor of Science</p>
        <p>Major in Computer Science, Minor in Business</p>
       </div>
@@ -358,7 +378,7 @@ $(window).on('scroll', function(e) {
       </div>
    </div>
    <div class="col-md-4">
-   <div class="panel panel-default">
+   <div class="panel panel-default" id="savonia">
       <div class="panel-heading">
         <h3 class="panel-title">Savonia university of applied science</h3>
        </div>
@@ -371,7 +391,7 @@ $(window).on('scroll', function(e) {
       </div>
     </div>
    <div class="col-md-4">
-    <div class="panel panel-default">
+    <div class="panel panel-default" id="aalen">
       <div class="panel-heading clearfix">
         <h3 class="panel-title pull-left">HTW Aalen</h3>
        
