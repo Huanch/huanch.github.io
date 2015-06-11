@@ -163,6 +163,51 @@ ul.social_link li
   animation-fill-mode: both;
 }
 
+#section_place
+{
+  background: #f5f5f5;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+
+#section_place.row
+{
+  padding: 0px;
+
+}
+.card
+{
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.card img
+{
+  width: 100%;
+  height: 100%;
+
+ 
+}
+
+.caption
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#67809F;
+  opacity: 0;
+  -webkit-transition: opacity .75s;
+ padding:20px;
+}
+
+.card:hover .caption
+{
+  opacity: 1;
+}
+
+
 #finland
 {
   background: url("../fin.jpg") no-repeat fixed;
@@ -180,24 +225,27 @@ ul.social_link li
 
 #uef
 {
+  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+}
+
+#savonia
+{
   -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
     animation-delay: 2s;
 }
 
-#savonia
+#aalen
 {
   -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
     animation-delay: 3s;
 }
 
-#aalen
+
+#section_gallery
 {
-  -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-    animation-delay: 4s;
+  background: #f5f5f5;
 }
-
-
-
     
 .footer {
  
@@ -274,7 +322,7 @@ color: #fff;
 
 a.btn
 {
-  background-color: transparent;
+  background-color: rgb(182, 165, 165);
   border-radius: 30px;
   padding: 10px;
   border: 0px;
@@ -286,9 +334,11 @@ a.btn:focus, a.btn:hover
 
 }
 
-.email
+.email,.wechat
 {
-  color: #777272
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
