@@ -9,127 +9,28 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<!-- Custom styles for this template -->
     <link href="css/stylesheet.css" rel="stylesheet" media="screen">
-     <link href="css/animate.css" rel="stylesheet" media="screen">
-	<!-- Jquery UI stylesheet-->
-	<link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-     <!--Jquery UI-->
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    
-     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="js/modal.js"></script>
-    
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59494832-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<!-- Load google map API -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
- <script>
-
- function initialize() {
-
-
-        var mapCanvas = document.getElementById('map-canvas');
-        var myLatLng= new google.maps.LatLng(62.60118, 29.76316);
-        var mapOptions = {
-          center: myLatLng,
-          zoom: 1,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker=new google.maps.Marker({
-          position:myLatLng,
-          map:map,
-          title:"I am here!"
-        });
-
-        var infowindow= new google.maps.InfoWindow({
-        	content:'<p>I am here!</p>'
-
-        });
-
-        google.maps.event.addDomListener(marker, 'click', function(){
-        	infowindow.open(map, marker);
-        });
-
-        infowindow.open(map, marker);
-
-        var myLatLng2= new google.maps.LatLng(30.58, 114.28);
-	var marker2=new google.maps.Marker({
-          position:myLatLng2,
-          map:map
-        });
-
-        var infowindow2= new google.maps.InfoWindow({
-        	content:'<p>I am from Wuhan,China!</p>'
-
-        });
-
-        google.maps.event.addDomListener(marker2, 'click', function(){
-        	infowindow2.open(map, marker2);
-        });
-
-        $('#wh').click(function(){infowindow2.open(map, marker2)});
-
-
-
-
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
-
-//$('#myModal').modal({show:true});
-function show_avatar()
-{
-	$('.avatar').show();
-}
-
-function show_intro()
-{
-	
-	$('#introduction').show();
-	/*$( "#introduction" ).animate({ "right": "+=150px" }, "slow" );*/
-	
-	
-}
-
-
 
 $(document).ready(function() {
 
 	$('#scroll-down').click(function(){
 		var target=$(this).parent('a').attr('href');
 	 $('html, body').animate({
-	 	
+
         scrollTop: $(target).offset().top-100
     }, 1000);
     return false;
 	})
 
-function show_modal(){
 
-  	$('.modal-body').empty();
-  	var title = $(this).parents('div').children('a').attr("title");
-  	$('.modal-title').html(title);
-  	$($(this).parents('div').html()).appendTo('.modal-body');
-  	$('#myModal').modal({show:true});
-}
 
 /*function img_hover(){
-	
+
 		var height=$(this).height();
 		var width=$(this).width();
 		var title = $(this).parent('a').attr("title");
@@ -151,25 +52,25 @@ function show_modal(){
         $(this).parent().next().html(title);
 
 
-	
+
 }
 
 function img_hover_off(){
-	
+
 
         $(this).parent().next().css("background","rgba(255, 255, 255, 0)");
 
         $(this).parent().next().html("");
 
 
-	
+
 }
 
-	
-//$("#ph1").mouseenter(img_hover
-	
 
-	/*function(){ 
+//$("#ph1").mouseenter(img_hover
+
+
+	/*function(){
 
 		var height=$(this).height();
 		var width=$(this).width();
@@ -195,66 +96,7 @@ function img_hover_off(){
 
 //$("#ph2").mouseover(img_hover);
 
-$('.thumbnail').mouseover(
 
-	function(){
-
-		 $(this).parent().next().addClass('img_hover');
-		 var title = $(this).parents('div').children('a').attr("title");
-  	     $(this).parent().next().html(title);
-
-	}
-
-
-	);
-
-$('.thumbnail').mouseout(
-
-	function(){
-
-		 $(this).parent().next().removeClass('img_hover');
-		 $(this).parent().next().html("");
-
-	}
-
-
-	);
-
-$('.mask').mouseover(
-
-	function(){
-
-
-		 $(this).addClass('img_hover');
-		 var title = $(this).parents('div').children('a').attr("title");
-  	     $(this).html(title);
-
-
-	}
-
-
-	);
-
-$('.mask').mouseout(
-
-	function(){
-
-		 $(this).removeClass('img_hover');
-		 $(this).html("");
-
-	}
-
-
-	);
-
-	setTimeout(show_avatar, 1000);
-	setTimeout(show_intro, 2000);
-
-
-
-$('.thumbnail').click(show_modal);
-$('.mask').click(show_modal);
- 
 
 	//$('.modal-body').empty();
 
@@ -276,8 +118,8 @@ $(window).on('scroll', function(e) {
 
         scrollTop=$(window).scrollTop();
         var windowHeight=$(window).height();
-         
-     
+
+
 
          if($('.panel').offset().top<(scrollTop+windowHeight))
          	$('.panel').addClass('animated fadeIn');
@@ -287,7 +129,7 @@ $(window).on('scroll', function(e) {
 
 
 /*$(".thumbnail").mouseover(
-		function(){ 
+		function(){
 		$(".thumbnail").parent().next().css("height",function(){
         return $("#ph").height()*0.4;
         });
@@ -314,76 +156,48 @@ $(window).on('scroll', function(e) {
 
 </script>
 </head>
-  
+
 <body>
-<div id="wrapper">
 <div  id="header" class="navbar">
-  
+
   <div class="container">
     <ul class="nav nav-pills">
       <li class="active"><a href="#">Home</a></li>
       <li><a href="">Photo</a></li>
-     
+
     </ul>
   </div>
 </div>
-<div id="intro" class="container">
+<div id="intro" class="">
 <div class="row">
+<div class="col-md-2"></div>
 <div class="col-md-4">
  <img class="avatar" src="profile.jpg" >
 </div>
-<div class="col-md-2"></div>
+
 <div class="col-md-6" id="introduction">
 
 <h2 >Huan Chen</h2>
-<p>Hi. I am Huan from China. I am currenly working as customer support engineer at indooratlas, an indoor positioning technology compnay.</p>
-    
+<p>Hi. I am Huan from China. I am currenly working as research and course developer on an online enducation website called jisuanke</p>
+
 </div>
 
 
-    
+
 </div>
 </div>
 
-<div><a href="#section_place"><div id="scroll-down"><span class="glyphicon glyphicon-chevron-down icon-center" aria-hidden="true"></span></div></a></div>
-
-</div>
-<div id="section_place">
-<div class="container">
-<h2>Place</h2>
-<div class="row">  
-   <div class="col-md-3 ">
-   <div class="card">
-   	<div class="caption">I have grown up in wuhan</div>
-   	<img src="Wuhan.jpg" class="img-responsive">
-   </div>
 
 
-   </div>
-   <div class="col-md-3">
-   <div class="card">
-   <div class="caption">I have studied in Finland</div>
-   	<img src="kuo.jpg" class="img-responsive">
-   </div>
-   </div>
-   <div class="col-md-3">
-   <div class="card">
-   <div class="caption">I have been exchange student in Aalen, Germany for half a year.</div>
-   	<img src="aalen.jpg" class="img-responsive">
-   </div>
-   </div>
-   </div>
 
-</div>	
-</div>
-</div>
-	
-</div>
+
+
+
 <div id="education" class="container">
   <h1 class="section_header">Education</h1>
   <p>I have done my undergraduate studies in Finland and I have been exchange student in Germany for half year in 2007</p></br>
 
-   <div class="row">  
+   <div class="row">
    <div class="col-md-4">
  <div class="panel panel-default" id="uef">
       <div class="panel-heading clearfix">
@@ -401,7 +215,7 @@ $(window).on('scroll', function(e) {
    <div class="col-md-4">
    <div class="panel panel-default" id="savonia">
       <div class="panel-heading">
-        <span class="panel-title">Savonia university of applied science</span> 
+        <span class="panel-title">Savonia university of applied science</span>
        </div>
       <div class="panel-body">
        <p>Bachelor of Engineering in Information Technology</p>
@@ -414,8 +228,8 @@ $(window).on('scroll', function(e) {
    <div class="col-md-4">
     <div class="panel panel-default" id="aalen">
       <div class="panel-heading clearfix">
-        <span class="panel-title pull-left">HTW Aalen</span> 
-       
+        <span class="panel-title pull-left">HTW Aalen</span>
+
        </div>
       <div class="panel-body">
         <p>Intercultural communication, Intercultural management, German A1, German A2</p>
@@ -427,39 +241,12 @@ $(window).on('scroll', function(e) {
 </div>
 </div>
 </div> <!-- /container -->
-<div id="section_gallery">
-<div id="gallery" class="container">
-<h1 class="section_header">Photo</h1><br>
-	<div class="row">
-      <div class="col-lg-3 col-sm-4 col-6 " ><a title="Kitties" class=""><img src="MyImages/cats.jpg" class="thumbnail img-responsive" id="ph1"></a><div class="mask"></div></div>
-      <div class="col-lg-3 col-sm-4 col-6 " ><a title="Krakow" class=""><img src="MyImages/krakow.jpg" class="thumbnail img-responsive" id="ph2"></a><div class="mask"></div></div>
-      
-    </div>
 
-
-</div>
-
-</div>
 </div>
 	<footer class="footer">
       <div class="container">
       <div class="row">
-      <div class="col-md-5" id="place">
-      <h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Location</h3>
-      <div id="tabs">
-      <ul>
-      <li><a href="#tab1"><h4 id="location">Where I am now</h4></a></li>
-      <li><h4>/</h4></li>
-      <li><a href="#tab2"><h4 id="location_hm">Where I am from</h4></a></li>
-      </ul>
-      <div id="tab1">
-      <p>Currently in Joensuu, Finland.
-      </div>
-      <div id="tab2">
-       <p>Originally I am from <a id="wh">Wuhan, China</a></p>
-       </div>
-      </div>
-       <div id="map-canvas" ></div></div>
+
       <div class="col-md-4">
       <div id="contact">
       <h3><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Contact</h3>
@@ -469,21 +256,21 @@ $(window).on('scroll', function(e) {
      </div>
      <div id="download">
      <h3><span class="glyphicon glyphicon-download-alt"></span>Download</h3>
-     <p>cv</p>	
+     <p>cv</p>
      </div>
 
       </div>
-      
+
       <div class="col-md-3">
       	 <h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Social profiles</h3>
       <ul class="social_link">
     <li><a class="btn btn-default"  href="http://www.linkedin.com/in/huanch10"><img class="social_icon" src="img/linkedin.png" title="Linkedin" /></a></li>
     <li><a class="btn btn-default"  href="http://www.zhihu.com/people/huan-chen-85-50"><img class="social_icon" src="img/zhihu.png" title="Zhihu" /></a></li>
-    
+
     </ul>
       </div>
-       
-      </div>  
+
+      </div>
       </div>
   <div id="footer">
     <div class="container">2015 by Huan Chen. This site was built with Bootstrap ang Glyphicon</div>
@@ -491,26 +278,10 @@ $(window).on('scroll', function(e) {
    </div>
 </footer>
 
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Confirmation</h4>
-            </div>
-            <div class="modal-body">
-                
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                
-            </div>
-        </div>
-    </div>
-</div>
-<!-- 
+
+<!--
     <script src="http://code.jquery.com/jquery.js"></script>
-   
+
 -->
   </body>
 </html>
