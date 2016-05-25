@@ -4,15 +4,14 @@ html {
   position: relative;
   min-height: 100%;
 }
-body {
-  /* Margin bottom by footer height */
- /* margin-bottom: 60px;*/
+
+body
+{
+  margin:0px;
 }
 
 p
 {
-  font-family: 'Lato', sans-serif;
-  color: #777;
 }
 
 footer
@@ -63,10 +62,6 @@ border-radius: 0px;
 {
   color:#777;
 }
-#intro{
-  height: 100%;
-  padding-top: 100px;
-}
 
 .bg_intro
 {
@@ -76,6 +71,9 @@ border-radius: 0px;
 
 .section_header
 {
+  height: 100%;
+
+  color: #555;
 
 }
 
@@ -86,35 +84,41 @@ border-radius: 0px;
 }
 
 #intro{
-background-color: #eceff1;
+background-color: rgb(165,215,200);
 background-size: 100%;
 padding-bottom: 100px;
+color: #555;
+height: 100%;
+padding-top: 100px;
 
 }
 
 
 
-#intro h2,#intro p
+
+#main h2
 {
-  color: #777;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
-img.avatar
+#main .container
 {
-height: 240px;
-width: 240px;
-border-radius: 240px;
-
-
+  padding-bottom:50px;
 }
 
-#introduction
+
+
+.img-mid
 {
-
-
-
+  width: 320px;
 }
 
+.img-middle
+{
+  display:block;
+  margin: 0 auto;
+}
 #scroll-down
 {
 
@@ -252,6 +256,35 @@ ul.social_link li
     animation-delay: 3s;
 }
 
+#hobby
+{
+  background: #e7e7e7;
+  padding: 20px;
+}
+
+#contact_info
+{
+  margin: 20px;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+
+
+}
+
+#card
+{
+  border:solid;
+  border-width: 1px!important;
+  border-radius: 4px;
+  padding: 15px;
+}
+#qr
+{
+
+  width: 200px;
+}
 
 #section_gallery
 {
@@ -281,18 +314,6 @@ height:480px;
 
   }
 
-#map-canvas
-{
-  width: 400px;
-  height: 300px;
-  background-color: #CCC;
-}
-
-#map-canvas p
-{
-  color: blue;
-}
-
 
 #accordion
 {
@@ -304,10 +325,6 @@ height:480px;
 {
   color: #ffffff;
 }
- #education
- {
-  margin-bottom: 200px;
- }
 
 .panel-default>.panel-heading{
   background-color: #FF8F00;
@@ -465,9 +482,4 @@ text-decoration: none;
 
 
   /*border: 40px solid rgba(0,0,0,0.7);*/
-}
-
-body
-{
-  margin:0px;
 }

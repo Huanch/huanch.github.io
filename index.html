@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- Custom styles for this template -->
-    <link href="css/stylesheet.css" rel="stylesheet" media="screen">
-    <link href="css/animate.css" rel="stylesheet" media="screen">
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
+	<!-- Custom styles -->
+    <link href="css/stylesheet.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+
 
 
 <script>
@@ -158,7 +159,7 @@ $(window).on('scroll', function(e) {
 </head>
 
 <body>
-<div  id="header" class="navbar">
+<!-- <div  id="header" class="navbar">
 
   <div class="container">
     <ul class="nav nav-pills">
@@ -167,18 +168,20 @@ $(window).on('scroll', function(e) {
 
     </ul>
   </div>
-</div>
-<div id="intro" class="">
+</div> -->
+<div id="main">
+<div id="intro">
+  <div class="container">
 <div class="row">
-<div class="col-md-2"></div>
-<div class="col-md-4">
- <img class="avatar" src="profile.jpg" >
+
+<div class="col-md-6">
+ <img class="avatar" src="profile.png" >
 </div>
 
 <div class="col-md-6" id="introduction">
 
-<h2 >Huan Chen</h2>
-<p>Hi. I am Huan from China. I am currenly working as research and course developer on an online enducation website called jisuanke</p>
+<h2 class="section_header" >About me</h2>
+<p>Hi. I am Huan from China. I am currenly living in Beijing, working as an researcher and course developer on an online enducation website called jisuanke</p>
 
 </div>
 
@@ -186,15 +189,17 @@ $(window).on('scroll', function(e) {
 
 </div>
 </div>
+</div>
 
 
 
 
 
 
-
-<div id="education" class="container">
-  <h1 class="section_header">Education</h1>
+<!--
+<div id="education">
+  <div class="container">
+  <h2>What and where I have studied</h2>
   <p>I have done my undergraduate studies in Finland and I have been exchange student in Germany for half year in 2007</p></br>
 
    <div class="row">
@@ -240,29 +245,72 @@ $(window).on('scroll', function(e) {
       </div>
 </div>
 </div>
+</div>
+</div>
+-->
+<div id="hobby">
+  <div class="container">
+    <h2 class="section_header">What I like</h2>
+    <div class="row" style="min-width:1200px">
+    <div class="col-md-8">
+    <img src="MyImages/cats.jpg" class="img-responsive" style="height:500px"/>
+  </div>
+
+  <div class="col-md-4">
+    <div class="row">
+    <div>
+      <img src="MyImages/cats.jpg" class="img-responsive" style="height:240px;margin-bottom:20px"/>
+    </div>
+  </div>
+  <div class="row">
+    <div>
+      <img src="MyImages/cats.jpg" class="img-responsive" style="height:240px"/>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <h2 class="section_header">Let's contact</h2>
+    <h4 class="text-center"> Say Hi to me</h4>
+    <div class="col-md-4"></div>
+    <div class="col-md-4" id="contact_info">
+
+            <li >Email:huanch10@outlook.com</li>
+            <li >wechat:chat2huan</li>
+    </div>
+    <div class="col-md-4"></div>
+
+    </div>
+  </div>
+</div>
 </div> <!-- /container -->
 
-</div>
+
 	<footer class="footer">
       <div class="container">
       <div class="row">
 
       <div class="col-md-4">
-      <div id="contact">
-      <h3><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Contact</h3>
-      <p>Thank you for visiting my profile page! <br> Feel free to contact me at </p> <span class="email">huanch10@outlook.com </span>
+      <div>
+      <h3>Location</h3>
+      <!-- <p>Thank you for visiting my profile page! <br> Feel free to contact me at </p> <span class="email">huanch10@outlook.com </span>
 
-      <p>Or chat with me on Wechat</p><span class="wechat">Wechat ID: chat2huan </span>
+      <p>Or chat with me on Wechat</p><span class="wechat">Wechat ID: chat2huan </span> -->
      </div>
-     <div id="download">
+     <p>Haidian, Beijing, China</p>
+     <!-- <div id="download">
      <h3><span class="glyphicon glyphicon-download-alt"></span>Download</h3>
      <p>cv</p>
-     </div>
+     </div> -->
 
       </div>
 
       <div class="col-md-3">
-      	 <h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Social profiles</h3>
+      	 <h3>Around the web</h3>
       <ul class="social_link">
     <li><a class="btn btn-default"  href="http://www.linkedin.com/in/huanch10"><img class="social_icon" src="img/linkedin.png" title="Linkedin" /></a></li>
     <li><a class="btn btn-default"  href="http://www.zhihu.com/people/huan-chen-85-50"><img class="social_icon" src="img/zhihu.png" title="Zhihu" /></a></li>
@@ -272,8 +320,9 @@ $(window).on('scroll', function(e) {
 
       </div>
       </div>
+    </div>
   <div id="footer">
-    <div class="container">2015 by Huan Chen. This site was built with Bootstrap ang Glyphicon</div>
+    <div class="container">2016 by Huan Chen. This site was built with Bootstrap and Glyphicon</div>
   </div>
    </div>
 </footer>
