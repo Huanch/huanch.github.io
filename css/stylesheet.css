@@ -12,7 +12,9 @@ body
 
 p
 {
+  font-size: 18px;
 }
+
 
 footer
 {
@@ -39,10 +41,20 @@ ul
   padding: 0;
 }
 
-.panel
+#alert
 {
+  margin-bottom: 0;
+}
+
+.section_header
+{
+  height: 100%;
+
+  color: #555;
 
 }
+
+
 
 #header.fixed {
 position: fixed;
@@ -69,13 +81,6 @@ border-radius: 0px;
   text-align: right;
 }
 
-.section_header
-{
-  height: 100%;
-
-  color: #555;
-
-}
 
 
 
@@ -87,10 +92,14 @@ border-radius: 0px;
 background-color: rgb(165,215,200);
 background-size: 100%;
 padding-bottom: 100px;
-color: #555;
+color: #ffffff;
 height: 100%;
 padding-top: 100px;
+}
 
+#intro .section_header
+{
+  color: #ffffff;
 }
 
 

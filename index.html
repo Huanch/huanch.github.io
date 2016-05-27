@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
 	<!-- Custom styles -->
@@ -26,7 +27,11 @@ $(document).ready(function() {
         scrollTop: $(target).offset().top-100
     }, 1000);
     return false;
-	})
+	});
+
+  // $('.alert .close').on('click', function () {
+  //   console.log(this.parentNode);
+  // });
 
 
 
@@ -103,7 +108,7 @@ function img_hover_off(){
 
 
 
-$("#tabs").tabs();
+// $("#tabs").tabs();
 
 
 $(window).on('scroll', function(e) {
@@ -169,6 +174,7 @@ $(window).on('scroll', function(e) {
     </ul>
   </div>
 </div> -->
+<div id="alert" class="alert alert-info alert-dismissible" role="alert"> This page is still under development. Sorry for the mess!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
 <div id="main">
 <div id="intro">
   <div class="container">
@@ -181,7 +187,7 @@ $(window).on('scroll', function(e) {
 <div class="col-md-6" id="introduction">
 
 <h2 class="section_header" >About me</h2>
-<p>Hi. I am Huan from China. I am currenly living in Beijing, working as an researcher and course developer on an online enducation website called jisuanke</p>
+<p>Hi. I am Huan from China. I am currenly living in Beijing, working as an researcher and course developer on an online enducation website called jisuanke.</p>
 
 </div>
 
@@ -322,7 +328,7 @@ $(window).on('scroll', function(e) {
       </div>
     </div>
   <div id="footer">
-    <div class="container">2016 by Huan Chen. This site was built with Bootstrap and Glyphicon</div>
+    <div class="container">2016 by Huan Chen. This site was built with Bootstrap</div>
   </div>
    </div>
 </footer>
