@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color: #999;
+}
+
+h2{
+  font-family: initial;
+  color: #777;
+}
+
+#work{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  background-color: #edeff1;
+}
