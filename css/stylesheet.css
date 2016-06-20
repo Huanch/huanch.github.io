@@ -15,6 +15,11 @@ p
   font-size: 18px;
 }
 
+#contact_info ul
+{
+  list-style-type: none;
+  font-size:18px;
+}
 
 footer
 {
@@ -31,9 +36,9 @@ footer p
 
 }
 
-footer #place li
+footer a
 {
-  font-family: "Roboto",sans-serif;
+  text-decoration: underline;
 }
 
 ul
@@ -56,24 +61,6 @@ ul
 
 
 
-#header.fixed {
-position: fixed;
-z-index: 10;
-width: 100%;
-border-radius: 0px;
-}
-
-#header .nav-pills>li.active a
-{
-  color:#ffffff;
-  background-color:#ee6e73;
-
-}
-
-#header .nav-pills a
-{
-  color:#777;
-}
 
 .bg_intro
 {
@@ -484,11 +471,4 @@ text-decoration: none;
   padding: 10px;
 
 
-}
-
-#gallery .mask:hover
-{
-
-
-  /*border: 40px solid rgba(0,0,0,0.7);*/
 }
