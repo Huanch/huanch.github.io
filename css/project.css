@@ -13,40 +13,10 @@ p {
   line-height: 1.5em;
 }
 
-h2, { font-size: 18px; }
-
-h3 { font-size: 13px;}
-
-h5 { font-size: 18px !important;}
-
-h4 { color: #888888 !important;}
-
-h5 { color: #666666 !important;}
-
-h6 { font-size: 12px; }
-
-p { font-size: 16px;}
-
-h2,
-h5 { font-weight: 600; }
-
-h3, h4, p, li { font-weight: 300;}
-
-h3 { line-height: 0em;}
-
-p { line-height: 1.5em; }
-
-small {
-  font-family: 'Lato', sans-serif;
-  color: #808080;
+p{
+  font-size: 16px;
 }
 
-
-h1 > span:not(.nocolor),
-h2 > span:not(.nocolor),
-h3 > span:not(.nocolor),
-h4 > span:not(.nocolor),
-h6 > span:not(.nocolor) { color: #1ABC9C; }
 
 .header a {
   text-decoration: none;
@@ -84,6 +54,14 @@ body {
   font-size: 14px;
 }
 
+section{
+  padding-bottom: 50px;
+}
+
+#wrap{
+  padding-top:100px;
+  padding-bottom:100px;
+}
 
 #portfolio-filter {
   list-style: none;
