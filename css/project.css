@@ -9,7 +9,7 @@ ul,
 li,
 a,
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", 'SF UI Text', 'SF NS Text', -apple-system, 'Helvetica Neue', Helvetica, 'Arial', 'PingFang SC', sans-serif;
   line-height: 1.5em;
 }
 
@@ -59,8 +59,13 @@ section{
 }
 
 #wrap{
-  padding-top:100px;
   padding-bottom:100px;
+}
+
+@media screen and (min-width: 700px) {
+    #wrap {
+        padding-top:100px;
+    }
 }
 
 #portfolio-filter {
