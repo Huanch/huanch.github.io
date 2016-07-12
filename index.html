@@ -260,25 +260,27 @@ $(window).on('scroll', function(e) {
     <div class="text-center">
       <p>As you can see, I really love cats</p>
     </div>
-    <div class="row" style="min-width:1200px">
-    <div class="col-md-8">
-    <img src="MyImages/cats.jpg" class="img-responsive" style="height:500px"/>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <img src="MyImages/cats.jpg" class="img-main">
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+            <div class="row col-sm-12">
+                <div>
+                    <img src="MyImages/cats.jpg" class="cat1">
+                </div>
+            </div>
+            <div class="row col-sm-12">
+                <div>
+                    <img src="MyImages/cats.jpg" class="cat2">
+                </div>
+            </div>
+        </div>
   </div>
 
-  <div class="col-md-4">
-    <div class="row">
-    <div>
-      <img src="MyImages/cats.jpg" class="img-responsive" style="height:240px;margin-bottom:20px"/>
-    </div>
-  </div>
-  <div class="row">
-    <div>
-      <img src="MyImages/cats.jpg" class="img-responsive" style="height:240px"/>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
+  </div><!-- /container -->
 </div>
 
 <div id="contact">
@@ -291,7 +293,7 @@ $(window).on('scroll', function(e) {
 
             <li >Email:huanch10@outlook.com</li>
             <li >wechat:chat2huan</li>
-      </ul>      
+      </ul>
     </div>
 
 
@@ -301,36 +303,25 @@ $(window).on('scroll', function(e) {
 </div> <!-- /container -->
 
 
-	<footer class="footer">
-      <div class="container">
-      <div class="row">
+<footer class="footer">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
 
+                <h3>Location</h3>
+                <p>Haidian, Beijing, China</p>
+            </div>
+
+            <div class="col-md-4">
+      	         <h3>Around the web</h3>
+                 <ul class="social_link">
+                     <li><a class="btn btn-default"  href="http://www.linkedin.com/in/huanch10"><img class="social_icon" src="img/linkedin.png" title="Linkedin" /></a></li>
+                     <li><a class="btn btn-default"  href="http://www.zhihu.com/people/huan-chen-85-50"><img class="social_icon" src="img/zhihu.png" title="Zhihu" /></a></li>
+                 </ul>
+
+
+      </div>
       <div class="col-md-4">
-      <div>
-      <h3>Location</h3>
-      <!-- <p>Thank you for visiting my profile page! <br> Feel free to contact me at </p> <span class="email">huanch10@outlook.com </span>
-
-      <p>Or chat with me on Wechat</p><span class="wechat">Wechat ID: chat2huan </span> -->
-     </div>
-     <p>Haidian, Beijing, China</p>
-     <!-- <div id="download">
-     <h3><span class="glyphicon glyphicon-download-alt"></span>Download</h3>
-     <p>cv</p>
-     </div> -->
-
-      </div>
-
-      <div class="col-md-3">
-      	 <h3>Around the web</h3>
-      <ul class="social_link">
-    <li><a class="btn btn-default"  href="http://www.linkedin.com/in/huanch10"><img class="social_icon" src="img/linkedin.png" title="Linkedin" /></a></li>
-    <li><a class="btn btn-default"  href="http://www.zhihu.com/people/huan-chen-85-50"><img class="social_icon" src="img/zhihu.png" title="Zhihu" /></a></li>
-
-    </ul>
-
-
-      </div>
-      <div class="col-md-3">
         <h3>Other</h3>
             <p><a href="portfolio.html">My works</a></p>
       </div>
@@ -338,8 +329,8 @@ $(window).on('scroll', function(e) {
       </div>
       </div>
     </div>
-  <div id="footer">
-    <div class="container">2016 by Huan Chen. This site was built with Bootstrap</div>
+  <div id="copywrite" class="text-center">
+    <div class="container">2016 by Huan Chen. This site was built with Bootstrap.</div>
   </div>
    </div>
 </footer>
