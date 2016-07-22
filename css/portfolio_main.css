@@ -1,29 +1,43 @@
 body{
   margin: 0;
   padding: 0;
+  color: #4a4a4a;
+  font-size: 14px;
+
 }
 
 h1{
+    font-weight: 800;
   color: #999;
 }
 
 h2{
-  font-family: initial;
-  color: #777;
+    font-weight: 300;
+    color: #777;
 }
 
-#intro h1{
-    color:#ee6e73;
+h3{
+    font-size: 22px;
 }
 
 h3 a{
     color: #777;
 }
 
+#intro h1{
+    color:#ee6e73;
+}
+
+
 
 .section_title{
   border-left:5px solid #aabfca;
   padding-left:20px;
+}
+
+.section_content{
+    margin-top: 15px;
+    padding: 15px;
 }
 
 #work{
@@ -37,5 +51,12 @@ footer{
   left: 0;
   bottom: 0;
   padding: 20px;
-  background-color: #ee6e73;
+  /*background-color: #ee6e73;*/
+
+}
+
+#footer_content{
+    border-top: 1px dotted #dfdfdf;
+    padding-top: 20px;
+    font-family: monospace;
 }
