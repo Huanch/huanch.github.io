@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script><-->
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/modal.js"></script>
 	<!-- Custom styles -->
-    <link href="../css/stylesheet.css" rel="stylesheet" media="screen">
+    <link href="stylesheet.css" rel="stylesheet" media="screen">
     <link href="css/animate.css" rel="stylesheet" media="screen">
 
 
@@ -28,28 +28,45 @@
 <div id="alert" class="alert alert-info alert-dismissible" role="alert"> This page is still under development. Sorry for the mess!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
 -->
 <div id="main">
-<div id="section_intro">
+    <div id="background_pic"></div>
+    <img id="profile_pic" src="../profile.png" >
+<div id="content" class="content">
+
   <div class="container">
     <div class="row">
+        <div class="col-md-2"></div>
 
-      <div class="col-md-6">
-        <img id="profile_pic" src="../profile.png" >
+
+
+      <div class="col-md-8">
+        <div class="panel" id="intro_text">
+
+            <h2 class="section_header" >About me</h2>
+            <p>我叫陈欢，现居住在北京，从事在线教育。业余时间,我会出去闲逛，谈下吉他，拍拍照片。</p>
+            <h3>工作</h3>
+            <p>现在我在计蒜客做教学研究和课程开发。我主要负责人机交互方向的课程。</p>
+            <h3>教育背景</h3>
+            <p>学过计算机科学，国际商务，人机交互和教育技术。</p>
+            <h3>居住地</h3>
+            <p>在武汉长大，在芬兰和德国上过大学。</p>
+            <h3>语言</h3>
+            <p>英语流利，会一些芬兰语和德语。</p>
+        </div>
+        <div class="panel">
+            <h2 class="section_header">Let's keep in touch</h2>
+            <p class="text-center"> 跟我探讨专业问题，兴趣爱好 or just say Hi</p>
+
+            <div id="contact_info">
+              <ul>
+
+                    <li >电子邮件:huanch10@outlook.com</li>
+                    <li >微信:chat2huan</li>
+              </ul>
+
+        </div>
+
       </div>
-
-      <div class="col-md-6" id="intro_text">
-
-        <h2 class="section_header" >About me</h2>
-        <p>我叫陈欢，现居住在北京，从事在线教育。业余时间我喜欢谈吉他（只能谈一些chord的初学者）和摄影（用我的索尼维度和手机）。</p>
-        <h3>工作</h3>
-        <p>现在我在计蒜客做教学研究和课程开发。我主要负责人机交互方向的课程。</p>
-        <h3>教育背景</h3>
-        <p>学过计算机科学，国际商务，人机交互和教育技术。</p>
-        <h3>居住地</h3>
-        <p>在武汉长大，在芬兰和德国上过大学。</p>
-        <h3>语言</h3>
-        <p>英语流利，会一些芬兰语和德语。</p>
-
-      </div>
+      <div class="col-md-2"></div>
 
 
 
@@ -60,56 +77,6 @@
 
 
 
-
-
-<!--
-<div id="section_hobby">
-  <div class="container">
-    <h2 class="section_header">What I like</h2>
-    <div class="text-center">
-      <p>As you can see, I really love cats</p>
-    </div>
-
-    <div class="row">
-        <div class="col-md-8 col-sm-12">
-            <img src="MyImages/cats.jpg" class="img-main">
-        </div>
-
-        <div class="col-md-4 col-sm-12">
-            <div class="row col-sm-12">
-                <div>
-                    <img src="MyImages/cats.jpg" class="cat1">
-                </div>
-            </div>
-            <div class="row col-sm-12">
-                <div>
-                    <img src="MyImages/cats.jpg" class="cat2">
-                </div>
-            </div>
-        </div>
-  </div>
-
-  </div>
-</div>
-
--->
-
-<div id="contact">
-  <div class="container">
-    <h2 class="section_header">Let's keep in touch</h2>
-    <p class="text-center"> 跟我探讨专业问题，兴趣爱好 or just say Hi</p>
-
-    <div id="contact_info">
-      <ul>
-
-            <li >电子邮件:huanch10@outlook.com</li>
-            <li >微信:chat2huan</li>
-      </ul>
-    </div>
-
-
-    </div>
-  </div>
 </div>
 </div> <!-- /container -->
 
