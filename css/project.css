@@ -18,6 +18,13 @@ p{
 }
 
 
+body {
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+
+
 .header a {
   text-decoration: none;
   color: #666;
@@ -30,6 +37,26 @@ p{
 
 
 
+.link {
+  color: #4D4D4D;
+}
+
+.link:hover {
+  color: #4D4D4D;
+  border-bottom: 1px solid #FF0000;
+}
+
+
+@media screen and (min-width: 700px) {
+    #wrap {
+        padding-top:50px;
+    }
+}
+
+#wrap{
+  padding-bottom:100px;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
@@ -40,82 +67,16 @@ p{
   width: 100%;
 }
 
-.link {
-  color: #4D4D4D;
-}
-
-.link:hover {
-  color: #4D4D4D;
-  border-bottom: 1px solid #FF0000;
-}
-
-body {
-  color: #4a4a4a;
-  font-size: 14px;
-}
 
 section{
   padding-bottom: 50px;
 }
 
-#wrap{
-  padding-bottom:100px;
-}
-
-@media screen and (min-width: 700px) {
-    #wrap {
-        padding-top:50px;
-    }
-}
-
-#portfolio-filter {
-  list-style: none;
-  position: relative;
-  width: 40%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#portfolio-filter li {
-    float: left;
-    width: 33.33%;
-    position: relative;
-}
-
-#portfolio-filter li.activeFilter a {
-  border-bottom: 1px solid red !important;
-  text-decoration: none;
-  color: #666666 !important;
-}
-
-#portfolio-filter a {
-    font-size: 14px;
-    text-align: center;
-    padding-bottom: 3%;
-    text-decoration: none;
-    color: #666666;
-    font-weight: 300;
-
-}
-
-#portfolio-filter a:focus {
-  border-bottom: 1px solid red;
-  text-decoration: none;
-  color: #666666;
-}
-
-#portfolio-filter a:hover {
-  border-bottom: 1px solid red;
-  text-decoration: none;
-  color: #666666;
-}
 
 
 
-#Container .mix{
-  display: none;
-}
+
+
 
 /*  Header  */
 
@@ -160,24 +121,6 @@ header #header-bar {
 }
 
 
-.box {
-  width: 75%;
-  border: 1px solid #e6e6e6;
-  height: auto;
-  overflow: auto;
-  margin: 0 auto;
-  padding: 1em;
-}
-
-.box h5 {
-  font-size: 14px !important;
-  color: #989898;
-}
-
-.box p {
-  font-size: 14px;
-}
-
 .header-img{
   width: 75%;
 }
@@ -195,18 +138,6 @@ header #header-bar {
   width: 6%;
 }
 
- .feast strong {
-  color: #FEBE10;
- }
-
-.track strong {
-  color: #DD3643;
-}
-
-.mapmycareer strong {
-  color: #A90533;
-}
-
 .
 
 /*   Section   */
@@ -215,17 +146,6 @@ header #header-bar {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-}
-
-.heading-block {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-
-.heading-block h2 {
-  font-size: 27px;
-  color: #C0C0C0;
-
 }
 
 
