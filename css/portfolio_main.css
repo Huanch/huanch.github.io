@@ -25,9 +25,8 @@ h1{
 }
 
 h2{
-    font-family:georgia,sans-serif;
     font-size: 24px;
-    font-weight: 500;
+
     color: #525a5e;
     margin-bottom: 30px;
 }
@@ -129,6 +128,7 @@ footer{
     padding-bottom: 40px;
     font-family: "Merriweather", sans-serif;
     font-size: 18px;
+    color: #8c8c8c;
 }
 
 #footer_content{
