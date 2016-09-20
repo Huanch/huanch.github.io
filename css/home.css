@@ -1,0 +1,52 @@
+.{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 16px;
+    color: #666;
+}
+#content_main{
+    padding: 100px;
+}
+
+.heading_block h2,h3 {
+    font-family: avenir,sans-serif;
+    color: #ee6e73;
+    line-height: 0.5;
+}
+
+#profile_pic{
+    width: 50%;
+}
+#intro_text .heading_block{
+    margin-bottom: 60px;
+}
+#content_contact{
+    padding: 50px;
+    background: #f0efef
+}
+
+#content_contact .heading_block{
+    margin-bottom: 30px;
+
+}
+
+#content_contact li
+{
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+#content_contact{
+
+}
+
+.footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ee6e73
+}
