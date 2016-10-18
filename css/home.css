@@ -24,17 +24,17 @@ p{
 #intro_text .heading_block{
     margin-bottom: 60px;
 }
-#content_contact{
+#section_contact{
     padding: 50px;
     background: #f0efef
 }
 
-#content_contact .heading_block{
+#section_contact .heading_block{
     margin-bottom: 30px;
 
 }
 
-#content_contact li
+#section_contact li
 {
     list-style-type: none;
     font-size: 16px;
@@ -42,9 +42,7 @@ p{
 
 }
 
-#content_contact{
 
-}
 
 .footer{
     padding-top: 10px;

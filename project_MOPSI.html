@@ -16,62 +16,83 @@
   <script type="text/javascript" src="js/modal.js"></script>
 <!-- Custom styles for this template -->
   <link href="css/project.css" rel="stylesheet" media="screen">
-  <link href="css/animate.css" rel="stylesheet" media="screen">
   <!-- Jquery-->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+
+      $('#scroll-down').click(function(){
+          var target=$(this).parent('a').attr('href');
+       $('html, body').animate({
+
+            scrollTop: $(target).offset().top
+        }, 1000);
+        return false;
+      });
+     });
+  </script>
 </head>
 
 <body>
-    <div  id="wrap" class="container">
-    <section id="intro">
 
-        <!-- /intro -->
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                    <img class="center-img topmargin bottommargin-lg img-responsive" src="img/MOPSI/mopsi.png">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                    <h1>Usability testing for MOPSI</h1>
-                    <p class="bottommargin-lg">MOPSI is a location based information system developed by SIPU lab, Computer science department, University of Eastern Finland</p>
-                </div>
-            </div>
+<div class="container">
+<a href="portfolio.html">Back to main page</a>
+</div>
 
-    </section>
+<div id="intro">
+    <div class="container">
+        <h1 class="text-center">Usability testing for MOPSI</h1>
+        <div id="intro-text">
+        <p>MOPSI is a location based information system developed by SIPU lab, Computer science department, University of Eastern Finland. I worked as an Usability researcher for MOPSI for 6 months.</p>
+        <p> This page tells usability tests I design and conduct for MOPSI</P>
+        </div>
+    </div>
+    <img class="img-responsive center-block" src="img/MOPSI/mopsi.png">
+    <a href="#content"><button  id="scroll-down" type="button" class="btn btn-primary center-block">More</button></a>
+</div>
 
-    <div  id="wrap" class="container">
+
+    <div  id="content">
     <!-- /intro -->
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6">
-                <section>
-                    <h2>Analysis of Context of Use</h2>
-                    <p>First I analyzed the context of use of Mopsi in dimension of user, task and envrionment</p>
-                </section>
-                <section>
-                    <h2>User tasks</h2>
+        <div>
+            <div>
+                <section class="grey-background">
+                    <div class="container">
+                    <h2>Research design</h2>
+                    <p>The research following the ISO 9204 principle</p>
+                    <p><i>"The effectiveness, efficiency and satisfaction with which specified users achieve specified goals in particular environments.
+ "</i></p>
+
                     <p>I defined several user tasks for testing.</p>
+                    </div>
                 </section>
                 <section>
-                    <h2>User profile of the testing</h2>
+                    <div class="container">
+                    <h2>Conducting the tests</h2>
                     <p>6 users took the testing.</p>
                     <ul>
                         <li> 3 international student and 3 locals </li>
                         <li> none of them has experience in using the system before</li>
                     </ul>
-                </section>
-                <section>
-                    <h2>Test setting</h2>
                     <p>Tests were conduct at home of moderator(Me) or home of users. </p>
                     <p>Users were allowed to explore the system before testing.</p>
                     <p>No training was given to users.</p>
+                </div>
                 </section>
-                <section>
+
+                <section class="grey-background">
+                    <div class="container">
                     <h2>Findings</h2>
                     <p>Following are two of the findings</p>
+                </div>
+                </section>
 
             </div> <!-- /header -->
         </div>
     </div>
-    </div>
+
 
 
 

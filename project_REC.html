@@ -12,42 +12,53 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/modal.js"></script>
 <!-- Custom styles for this template -->
-  <link href="css/project.css" rel="stylesheet" media="screen">
+  <link href="css/project_REC.css" rel="stylesheet" media="screen">
   <link href="css/animate.css" rel="stylesheet" media="screen">
-  <!-- Jquery-->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+  <script>
+
+
+    $(document).ready(function() {
+
+      $('#scroll-down').click(function(){
+          var target=$(this).parent('a').attr('href');
+       $('html, body').animate({
+
+            scrollTop: $(target).offset().top
+        }, 1000);
+        return false;
+      });
+     });
+  </script>
+
 </head>
 
 <body>
-    <div  id="wrap" class="container">
-        <div>
+
+        <div class="container">
         <a href="portfolio.html">Back to main page</a>
         <div>
-    <section id="intro">
+    <div id="intro">
 
-        <!-- /intro -->
-            <div class="row">
 
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="container text-center">
                     <h1>Design of an recorder application</h1>
-                    <p class="bottommargin-lg">This is a mobile application which can record voice.</p>
+                    <p class="bottommargin-lg">The page tells how I designed the interface of an andriod recording app</p>
                 </div>
-            </div>
+                <a href="#content"><button  id="scroll-down" type="button" class="btn btn-primary center-block">More</button></a>
+    </div>
 
-    </section>
 
-    <div  id="wrap" class="container">
-    <!-- /intro -->
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <section>
-                    <h2>Requirement Analysis</h2>
+
+<div id="content">
+                <section >
+                    <h2 class="text-center">Requirement Analysis</h2>
                     <h3>User tasks</h3>
                     <p>User can perform following tasks:</P>
-                        <ul>
+                        <ul class="">
                             <li>Record a voice session</li>
                             <li>View file list</li>
                             <li>Play a file</li>
@@ -68,13 +79,10 @@
                     <p>The interface of different states and interactive points </p>
                     <img class="topmargin bottommargin-lg img-responsive" src="img/REC/user flow1.png">
                 <section>
-            </div> <!-- /header -->
-        </div>
-    </div>
-    </div>
 
 
 
+</div>
 
 
 
