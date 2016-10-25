@@ -11,14 +11,19 @@ a,
 p {
   font-family:"Open sans", sans-serif;
   line-height: 1.5em;
+
 }
 
+h1{
+    color: #424242;
+}
 h2{
     font-weight: 1000;
 }
 
 p{
-  font-size: 14px;
+  font-size: 18px;
+  color: #666;
 }
 
 
@@ -34,29 +39,6 @@ body {
 
 
 
-
-.header a {
-  text-decoration: none;
-  color: #666;
-}
-
-.header a:hover {
-  text-decoration: none;
-  color: #999;
-}
-
-
-
-.link {
-  color: #4D4D4D;
-}
-
-.link:hover {
-  color: #4D4D4D;
-  border-bottom: 1px solid #FF0000;
-}
-
-
 @media screen and (min-width: 700px) {
     #intro {
         padding-top:50px;
@@ -67,7 +49,9 @@ body {
     }
 }
 
-
+#intro p{
+    font-size: 14px;
+}
 
 .container {
   position: relative;
@@ -93,56 +77,13 @@ section{
 
 
 
-/*  Header  */
-
-#navbar {
-  margin-top: 1em;
-}
-
-.homenav a {
-  margin: 1em;
-  color: #B3B3B3;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.homenav a:hover {
-  text-decoration: none;
-  color: #666666;
-}
-
-
-.mainpage-header img{
-  width: 18%;
-}
-
-.mainpage-header {
-}
-
-header #header-bar {
-  margin-top: 0px;
-  height: 10px;
-}
-
-header {
-  max-height: 420px;
-  height: 420px;
-  overflow: hidden;
-}
-
-header #header-bar {
-  margin-top: 0px;
-  height: 10px;
-}
-
-
 .header-img{
   width: 75%;
 }
 
 /*  Intro  */
 
-.section{
+section{
   width: 75%;
   padding-top: 4%;
   margin: 0 auto;
@@ -179,7 +120,6 @@ header #header-bar {
   display: inline-block !important;
 }
 
-.center { text-align: center !important; }
 
 .center-img {
     display: block !important;
