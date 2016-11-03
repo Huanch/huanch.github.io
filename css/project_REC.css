@@ -68,6 +68,11 @@ section{
   padding-bottom: 50px;
 }
 
+#intro-pic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 #scroll-down{
     margin: 0 auto;
