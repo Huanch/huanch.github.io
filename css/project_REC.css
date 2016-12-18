@@ -73,6 +73,11 @@ section{
     margin-bottom: 20px;
 }
 
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 #scroll-down{
     margin: 0 auto;

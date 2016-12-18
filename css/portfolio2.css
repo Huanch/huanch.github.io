@@ -13,8 +13,6 @@ body{
     padding-bottom: 190px;
     height: auto;
     min-height: 100%;
-
-
 }
 
 a{
@@ -48,26 +46,17 @@ h3 a{
     font-size:14px;
 }
 
-.img_card img{
-    width: 300px;
-    height: 200px;
-    }
-
-.img_card{
-    position: relative;
-
-    width: 300px;
-    height: 290px;
-    overflow: hidden;
 
 
+.card-img{
+    max-width: 400px;
+    
 }
-
 .card-img-wrap{
     position: relative;
     width: 100%;
     display: block;
-    
+
 }
 
 .card-img-hover{

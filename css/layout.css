@@ -22,8 +22,8 @@ p{
   color: #999;
 }
 
-.grey-background{
-    background: #f3f5f8;
+.blue-background{
+    background:#334959;
 }
 
 .container{
@@ -31,6 +31,11 @@ p{
     margin: auto;
 }
 
+blockquote{
+    vertical-align: middle;
+    color: #fff;
+    font-size: 22px;
+}
 
 body {
   color: #4a4a4a;
@@ -49,6 +54,13 @@ body {
     }
 }
 
+#intro {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
 #intro-text{
     margin-top: 20px;
     margin-bottom: 50px;
@@ -61,20 +73,13 @@ body {
 }
 
 
-.container {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-}
+
 
 .container .col {
   width: 100%;
 }
 
 
-section{
-  padding-bottom: 50px;
-}
 
 
 
@@ -91,12 +96,6 @@ section{
 }
 
 
-.mainpage-header img{
-  width: 18%;
-}
-
-.mainpage-header {
-}
 
 header #header-bar {
   margin-top: 0px;
@@ -121,33 +120,12 @@ header #header-bar {
 
 /*  Intro  */
 
-.section{
-  width: 75%;
-  padding-top: 4%;
+section{
+
+  padding-top: 5%;
+  padding-bottom: 5%;
   margin: 0 auto;
 }
-
-
-.logo-li img {
-  width: 6%;
-}
-
-.
-
-/*   Section   */
-
-.sub-heading {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
-
-.section img{
-  width: 80%;
-}
-
-
 
 
 /*   Basic   */
