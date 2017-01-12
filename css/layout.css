@@ -13,14 +13,22 @@ p {
   line-height: 1.5em;
 }
 
-h2 {
+h2{
     font-weight:bold;
     font-family: "helvetica", sans-serif; 
+    color: #3a3e3f;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-weight:bold;
+    font-family: "helvetica", sans-serif; 
+    color: #3a3e3f;
 }
 
 p {
   font-size: 18px;
-  color: #999;
+  color: #3a3a3a;
 }
 
 .blue-background{
