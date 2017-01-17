@@ -33,7 +33,20 @@ p {
 
 .blue-background{
     background:#334959;
+
 }
+
+.grey-background{
+  background:#ccc;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  
+
+}
+
+
+
+
 
 .container{
     max-width: 850px;
