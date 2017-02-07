@@ -32,15 +32,20 @@
         return false;
       });
 
-      $(window).on('scroll',function(e){
+      $(window).on("scroll", function(){
+        $('.animated').each(function(){
+      
+        
 
-      if($('.animated').offset().top<$(window).scrollTop()+$(window).height())
-      $('.animated').addClass('fadeInDown');
+      if($(this).offset().top<$(window).scrollTop()+$(window).height())
+         $(this).addClass('fadeInDown');
       else {
-          $('.animated').removeClass('fadeInDown');
+          $(this).removeClass('fadeInDown');
 
       }
+    
   });
+      });
 
      });
   </script>
