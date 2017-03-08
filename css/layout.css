@@ -22,12 +22,13 @@ h2{
 
 h3{
     font-weight:bold;
-    font-family: "helvetica", sans-serif; 
-    color: #3a3e3f;
+    font-family: "open sans", sans-serif; 
+    color: #555;
+    font-size: 20px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   color: #3a3a3a;
 }
 
