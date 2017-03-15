@@ -4,8 +4,10 @@
 }
 
 
+
+
 p{
-    font-size: 16px;
+    font-size: 32px;
     color: #666;
 }
 #content_main{
@@ -15,10 +17,15 @@ p{
 
 .heading_block h2,h3 {
     font-family: avenir,sans-serif;
-    color: #ee6e73;
+    color: #252525;
     line-height: 0.5;
     font-size: 48px;
-    font-weight: lighter;
+    font-weight: bolder;
+}
+
+.text_highlight_1{
+    color: #ee6e73;
+    
 }
 
 .text_right{
@@ -26,15 +33,35 @@ p{
 
 }
 
+.text_highlight{
+    color: #ffffff;
+    background: #ee6e73;
+    padding: 0 5px;
+}
+
+.font_weight_500{
+    font-weight: 500;
+}
+
+
+
 #profile_pic{
     width: 50%;
 }
 #intro_text .heading_block{
     margin-bottom: 60px;
 }
+
+#section_head{
+  
+}
+
+#section_about_me{
+    padding: 40px;
+}
 #section_contact{
     padding: 50px;
-    background: #f0efef
+  
 }
 
 #section_contact .heading_block{
@@ -56,4 +83,8 @@ p{
     padding-top: 10px;
     padding-bottom: 10px;
     background: #ee6e73
+}
+
+.footer p{
+    font-size:14px;
 }
