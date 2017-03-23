@@ -13,7 +13,7 @@ p {
   line-height: 1.5em;
 }
 
-h2{
+h1,h2{
     font-weight:bold;
     font-family: "helvetica", sans-serif; 
 }
@@ -27,9 +27,18 @@ h3{
 
 p {
   font-size: 16px;
-  color: #555;
+  color: #666;
 }
 
+strong{
+  font-weight: 700;
+  color: #212121;
+}
+
+.project-intro{
+  font-size: 20px;
+  font-weight: normal;
+}
 
 
 .note{
