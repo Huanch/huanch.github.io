@@ -50,6 +50,12 @@ strong{
   color: #c0c1c2;
 }
 
+.text-hightlight2{
+   color: #ffffff;
+    background: #ee6e73;
+    padding: 0 5px;
+}
+
 #intro-text p{
   font-size: 20px;
 }
