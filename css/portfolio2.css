@@ -20,8 +20,10 @@ a{
 }
 
 h1{
-    font-weight: 800;
-  color: #999;
+
+  font-size: 18px;
+  font-weight: 800;
+  color: #ee6e73;
   font-family: sans-serif;
 }
 
