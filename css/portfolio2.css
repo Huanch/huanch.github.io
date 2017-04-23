@@ -21,7 +21,7 @@ a{
 
 h1{
 
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 800;
   color: #ee6e73;
   font-family: sans-serif;
@@ -48,6 +48,16 @@ h3{
 h3 a{
     color: #fff;
 }
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  background: #ee6e73;
+
+}
+
+li>a:hover{
+  color: #555
+}
+
 
 .fixed{
   position: fixed;
@@ -170,9 +180,9 @@ footer{
 #footer{
     border-top: 1px dotted #dfdfdf;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     font-family: "Merriweather", sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #8c8c8c;
 }
 
