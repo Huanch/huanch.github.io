@@ -170,21 +170,16 @@ li>a:hover{
 }
 
 footer{
-  background: #323a45;
-
-  position: relative;
-  width: 100%;
  
-  right: 0;
-  left: 0;
-  padding:50px;
-  clear: both;
+
 
 }
 
 #footer{
+   background: #323a45;
         padding-top: 20px;
-    padding-bottom: 0px;
+        padding-bottom: 20px;
+  
     font-family: "Merriweather", sans-serif;
     font-size: 14px;
     color: #fff;
@@ -198,5 +193,12 @@ footer{
 #profile_pic{
     width: 120px;
     border-radius: 50%;
+
+}
+
+#anounce{
+background:#323a45;
+  color: #fff;
+  padding: 10px;
 
 }
