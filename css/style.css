@@ -35,10 +35,40 @@ strong{
   color: #212121;
 }
 
+.inter-section p{
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.blue-background{
+    background:#334959;
+    padding: 5%;
+
+}
+
+.grey-background{
+  background:#ccc;
+  padding: 40px;
+  margin-bottom: 0px;
+}
+
+.black-background{
+  background: #333
+}
+
+
 .project-intro{
   font-size: 20px;
   font-weight: normal;
 }
+
+.inter-section{
+  background: #333;
+  color: #fff;
+  font-family: helvetica;
+}
+
 
 
 .note{
@@ -60,19 +90,6 @@ strong{
   font-size: 20px;
 }
 
-.blue-background{
-    background:#334959;
-    padding: 5%;
-
-}
-
-.grey-background{
-  background:#ccc;
-  padding: 40px;
-  margin-bottom: 0px;
-  
-
-}
 
 
 
