@@ -35,6 +35,16 @@ strong{
   color: #212121;
 }
 
+section{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container{
+  padding: 0px;
+
+}
+
 .inter-section p{
   color: #ffffff;
   text-align: center;
@@ -56,6 +66,7 @@ strong{
 .black-background{
   background: #333
 }
+
 
 
 .project-intro{
