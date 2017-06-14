@@ -15,9 +15,6 @@ body{
     min-height: 100%;
 }
 
-a{
-    color:#ee6e73;
-}
 
 h1{
 
@@ -42,7 +39,11 @@ h2{
 h3{
     font-family:sans-serif;
     font-size: 20px;
-    color: #666;
+    color: #333;
+}
+
+a{
+  color: #555;
 }
 
 h3 a{
@@ -130,8 +131,9 @@ li>a:hover{
 }
 
 .keyword{
-    font-size: 12px;
-    font-style: oblique;
+  margin-top: 20px;
+    font-size: 12px;  
+    color: #ee6e73;
 }
 
 .move_info{
@@ -169,14 +171,9 @@ li>a:hover{
   margin-bottom: 20px;
 }
 
-footer{
- 
-
-
-}
 
 #footer{
-   background: #323a45;
+   background: #505050;
         padding-top: 20px;
         padding-bottom: 20px;
   
@@ -196,9 +193,11 @@ footer{
 
 }
 
-#anounce{
-background:#323a45;
-  color: #fff;
-  padding: 10px;
+#footer ul{
+  list-style-type: none;
+  padding-left: 0px
 
 }
+
+
+
