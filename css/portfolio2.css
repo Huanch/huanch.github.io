@@ -7,6 +7,10 @@ body{
 
 }
 
+@media (max-width: 768px){
+
+
+}
 
 #wrap{
 
@@ -77,6 +81,7 @@ li>a:hover{
 
 .card-img{
     max-width: 400px;
+    margin-bottom: 40px;
     
 }
 .card-img-wrap{
