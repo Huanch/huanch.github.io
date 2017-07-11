@@ -1,9 +1,6 @@
 body{
   margin: 0;
   padding: 0;
-  color: #4a4a4a;
-  font-size: 14px;
-  height: 100%;
 
 }
 
@@ -49,7 +46,7 @@ h2{
     font-weight: bolder;
 
     color: #525a5e;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-family: sans-serif;
     padding-left: 10px;
     text-align: center;
@@ -112,6 +109,11 @@ li>a:hover{
   }
 
 
+.intro{
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
 
 .card-img{
    max-width: 400px;
@@ -201,7 +203,7 @@ li>a:hover{
     padding: 15px;
 }
 
-#work, #article{
+#work{
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -210,9 +212,10 @@ li>a:hover{
   color: #337ab7
 }
 
-#article div{
-  margin-bottom: 20px;
+#article h3{
+
 }
+
 
 
 #footer{
