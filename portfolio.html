@@ -6,26 +6,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/modal.js"></script>
-<script type="text/javascript" src="js/jquery.shuffle.js"></script>
+<script type="text/javascript" src="js/jquery.scrolling-parallax.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+
+
+
 <!-- Custom styles -->
 <link href="css/portfolio3.css" rel="stylesheet" media="screen">
 <link href="css/animate.css" rel="stylesheet" media="screen">
 <script type="text/javascript">
-$('#myTabs a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
+$(function() {
+    
+   $.stellar();
+    
+});
 
-$('#myTabs a[href="#research"]').tab('show') 
   
 </script>
 </head>
 
 <body>
-<div id="header">
+<div id="header" data-stellar-background-ratio="0.5">
 <div id="hd-overlay">
 <div id="hd-content" class="container" >
 <div class="row" style="margin:100px 0">
@@ -337,5 +340,7 @@ $('#myTabs a[href="#research"]').tab('show')
        <div style="background: #666;color: #fff" class="text-center"><p>updated@2017. 感谢 github 和 bootstrap。</p></div>
 
 </footer>
+<script type="text/javascript" src="js/jquery.stellar.js"></script>
+
 </body>
 </html>
