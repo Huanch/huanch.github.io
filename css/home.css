@@ -7,9 +7,10 @@
 
 
 p{
-    font-size: 32px;
+    font-size: 18px;
     color: #666;
 }
+
 #content_main{
     padding-top: 100px;
     padding-bottom:100px;
@@ -57,12 +58,23 @@ p{
 }
 
 #section_about_me{
-    padding: 40px;
+    padding: 100px;
+
+    border-top: solid 2px #efefef;
 }
 #section_contact{
-    padding: 50px;
-    background: #ffffff;
+     border-top: solid 2px #efefef;
+    padding-top: 50px;
+    padding-bottom: 200px
   
+}
+
+#section_more{
+         border-top: solid 2px #efefef;
+
+     padding-top: 50px;
+    padding-bottom: 200px
+
 }
 
 #section_contact .heading_block{
@@ -82,9 +94,11 @@ p{
 
 
 .footer{
+         border-top: solid 2px #efefef;
+
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #ee6e73
+  
 }
 
 .footer p{
