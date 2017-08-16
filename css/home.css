@@ -4,12 +4,15 @@
 }
 
 
+
 h2{
     margin-bottom: 50px
 }
 
 p{
     font-size: 18px;
+    font-family: avenir,sans-serif;
+
     color: #666;
 }
 
@@ -18,7 +21,7 @@ p{
     padding-bottom:100px;
 }
 
-.heading_block h2,h3 {
+h2{
     font-family: avenir,sans-serif;
     color: #252525;
     line-height: 0.5;
@@ -65,9 +68,36 @@ p{
 
     border-top: solid 2px #efefef;
 }
+
+#section_hobby{
+   
+    padding-bottom: 200px;
+
+    border-top: solid 2px #efefef;
+}
+
+#section_hobby .content{
+    padding: 50px
+}
+
+#section_hobby .row {
+       border-bottom: solid 2px #efefef;
+       padding: 0px;
+
+}
+
+.img-container{
+    padding: 0px;
+}
+
+#section_hobby img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 #section_contact{
-     border-top: solid 2px #efefef;
-    padding-top: 50px;
+    
     padding-bottom: 200px
   
 }
