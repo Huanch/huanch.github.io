@@ -3979,7 +3979,7 @@
 			padding: 0.625em 0;
 		}
 
-			#menu ul a:hover, #menu ul span:hover {
+			#menu ul a:hover,#menu ul a:active, #menu ul span:hover {
 				color: #f56a6a;
 			}
 
@@ -4054,4 +4054,8 @@
 			border-top: 0;
 			margin-top: 0;
 			padding-top: 0;
+		}
+
+		#menu li.active{
+			color: #f56a6a;
 		}
