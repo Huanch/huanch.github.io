@@ -20,35 +20,7 @@
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 
 
-  <script>
-    $(document).ready(function() {
-
-      $('#scroll-down').click(function(){
-          var target=$(this).parent('a').attr('href');
-       $('html, body').animate({
-
-            scrollTop: $(target).offset().top
-        }, 1000);
-        return false;
-      });
-
-      $(window).on("scroll", function(){
-        $('.animated').each(function(){
-      
-        
-
-      if($(this).offset().top<$(window).scrollTop()+$(window).height())
-         $(this).addClass('fadeInDown');
-      else {
-          $('this').removeClass('fadeInDown');
-
-      }
-    
-  });
-      });
-
-     });
-  </script>
+  
 </head>
 
 <body style="background:#F0F0F0">
@@ -199,10 +171,35 @@
     ================================================== -->
 
 
-
 <script>
+    $(document).ready(function() {
 
-</script>
+      $('#scroll-down').click(function(){
+          var target=$(this).parent('a').attr('href');
+       $('html, body').animate({
+
+            scrollTop: $(target).offset().top
+        }, 1000);
+        return false;
+      });
+
+      $(window).on("scroll", function(){
+        $('.animated').each(function(){
+      
+        
+
+      if($(this).offset().top<$(window).scrollTop()+$(window).height())
+         $(this).addClass('fadeInDown');
+      else {
+          $('this').removeClass('fadeInDown');
+
+      }
+    
+  });
+      });
+
+     });
+  </script>
 </body>
 
 </html>
