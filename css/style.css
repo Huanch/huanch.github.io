@@ -11,6 +11,7 @@ a,
 p {
   font-family:"Open sans", sans-serif;
   line-height: 1.5em;
+
 }
 
 h1{
@@ -22,6 +23,11 @@ h1,h2{
     font-family: "PingFang","helvetica", sans-serif; 
 }
 
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px；
+}
 
 h2.demo-title{
   color: #f56a6a;
@@ -42,11 +48,7 @@ h3{
       margin-top: 40px;
 }
 
-p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 40px；
-}
+
 
 strong{
   font-weight: 700;
@@ -61,6 +63,10 @@ section{
 ul{
   font-size: 16px;
   color: #666;
+}
+
+.dark-bg h1,.dark-bg h2,.dark-bg h3,.dark-bg p{
+  color: #fff
 }
 
 .demo-title h2{
@@ -273,11 +279,23 @@ section{
 
 /*  footer  */
 
+footer .container{
+  padding: 20px;
+  background-color: #000;
+}
+
+footer a{
+  color: #fff;
+}
+
+footer a:hover{
+  color: #777;
+}
+
 .footersection{
   position: absolute;
-  border-top: 2px solid #F2F2F2;
   width: 100%;
-  padding: 20px;
+
 }
 
 
