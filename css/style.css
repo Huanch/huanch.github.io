@@ -23,6 +23,11 @@ h1,h2{
     font-family: "PingFang","helvetica", sans-serif; 
 }
 
+h2{
+  margin-bottom: 20px;
+}
+
+
 p {
   font-size: 16px;
   color: #666;
@@ -38,10 +43,11 @@ h3.demo-title{
   border-left: solid 4px #ee6e73;
   padding-left: 4px;
    margin-bottom: 20px;
+
 }
 
 h3{
-    font-weight:200;
+    font-weight:bold;
     font-family: "open sans", sans-serif; 
     color: #555;
     font-size: 18px;
@@ -65,7 +71,7 @@ ul{
   color: #666;
 }
 
-.dark-bg h1,.dark-bg h2,.dark-bg h3,.dark-bg p{
+.dark-bg h1,.dark-bg h2,.dark-bg h3,.dark-bg p, .dark-bg ul{
   color: #fff
 }
 
