@@ -71,6 +71,12 @@ ul{
   color: #666;
 }
 
+.col-highlight{
+  border-right: 4px solid #DE6A10;
+  padding-left: 60px;
+
+}
+
 .dark-bg h1,.dark-bg h2,.dark-bg h3,.dark-bg p, .dark-bg ul{
   color: #fff
 }
