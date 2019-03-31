@@ -3302,7 +3302,7 @@
 				left: -3em;
 				position: absolute;
 				top: 0;
-				width: 1px;
+				
 			}
 
 			.posts article:after {
@@ -3310,7 +3310,7 @@
 				bottom: -3em;
 				content: '';
 				display: block;
-				height: 1px;
+				
 				position: absolute;
 				right: 0;
 				width: calc(100% + 6em);
@@ -3357,7 +3357,7 @@
 		@media screen and (max-width: 1680px) {
 
 			.posts article {
-				width:400px;
+				
 			}
 
 				.posts article:nth-last-child(3) {
