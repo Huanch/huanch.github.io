@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Huan Chen">
+    <title>Huan Chen   |  优惠券 </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+  <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+  </head>
+
+  <body style="background:#fff">
+  <nav class="navbar navbar-default navbar-fixed-top" style="padding: 15px 15px">
+<div class="container">
+    <meta name="description" content="">
+    <a href="portfolio.html">返回</a>
+  </div>
+</nav>
+<div  class="container" style="background: #fff">
+<div id="header" class="dark-bg" style="background:#ca610f;background-size: cover;" >
+  <div id="bg-overlay" style="padding: 100px 50px;background-color: #3560af;">
+    <h2>毛豆销售工具：营销平台</h2>
+        <p>帮助销售团队管理优惠券 </p>
+        <p>项目时间：2018.06-2019.02</p>
+      </div>
+ </div>
+
+ <div style="background-image:url(img/sale/background1.jpeg)">
+  <div id="bg-overlay" class="dark-bg" style="background-color:#3a3a3acf;padding:150px 100px">
+      <h2 class="text-center">在购车过程中，顾客总是想要更多优惠</h2>
+      <h2 class="text-center">在售车时，给予顾客意想不到的额外优惠，有助于成交。</h2>
+         
+  </div>
+
+ </div>
+<div style="padding: 100px 50px;background-color: #eee;">
+  <p class="text-center">收益</p>
+    <h2 class="text-center">1.9个小时->0.5个小时</h2>
+    <h3 class="text-center">我们帮助销售团队将优惠券从申请到使用的时间从1.9个小时缩短到0.5个小时</h3>
+
+</div>
+
+<section>
+    <div class="row">
+        
+        <div class="col-xs-6">  
+            <h2>产品目标</h2>
+  <p>产品主要解决销售在帮客户申请优惠的流程中以下问题</p>
+    <ul>
+      <li><strong>销售不知道哪些车型有哪些优惠</strong></li>
+      <li><strong>销售难以在各种可能性的优惠组合中，快速计算优惠额度。</strong></li>
+      <li><strong>优惠申请和审批过程长，并且缺乏透明度</strong></li>
+    </ul>
+  <h3  style="color:#3560af">关键指标</h3>
+  <p>定量</p>
+  <ul>
+    <li><strong>优惠申请到审批时间</strong></li>
+  </ul>
+  <p>定性</p>
+  <ul>
+    <li><strong>销售团队主观评价</strong></li>
+  </ul>
+            </div>
+        
+    
+    
+    
+   <!--<div class="col-xs-6">  
+        <img class="img-responsive center-block" src="img/sale/mockup1.png" style="margin-top:40px">
+
+    </div>--> 
+  </div>
+  
+</section>
+<section style="background:#fff" >
+<h2>方案蓝图与业务流程</h2>
+<p>我们确定了用户跟系统的交互过程中不同的端，以及在这些端上的任务。</p>
+  
+<img class="img-responsive center-block" src="img/sale/process1.png" >
+
+</section>
+
+
+<section >
+    <h2>设计目标</h2>
+    <p>在确定了业务流程后，我们分析了用户在使用系统不同阶段的需求，并确定了设计目标</p>
+      
+    <p>设计目标</p>
+  <ul>
+      <li><strong>用户能迅速分辨不同优惠的使用方式和区别</strong></li>
+      <li><strong>用户能迅速找到客户所能获得的最高优惠</strong></li>
+
+  </ul>
+
+    
+<section >
+
+
+
+ 
+  <h2>设计方案</h2>
+  <h3 style="color:#3560af">列表</h3>
+  
+  <br>
+  <br>
+  <p>我们将不同的优惠劵和关键属性进行映射，定义了 3 中不同的优惠券样式。</p>
+  <img class="img-responsive center-block" src="img/sale/vouchermapping.png" style="max-width: 100%;" >
+
+
+  <div class="row" style="background:#f4f4f7;padding-top:20px;padding-bottom:20px ">
+      
+    <div class="col-xs-6">  
+  
+    <img class="img-responsive center-block" src="img/sale/wireframe1.png" style="max-width:160px" >
+    </div>
+ 
+
+
+
+</div>
+<h3 style="color:#3560af">申请</h3>
+<p>我们自动给出某车型下能申请的最高优惠额和销售填写的总优惠额，帮助销售更好的利用优惠额度。</p>
+  <div class="row" style="background:#f4f4f7;padding-top:20px;padding-bottom:20px ">
+      
+    
+    <img class="img-responsive center-block" src="img/sale/wireframe5.png" style="max-width:640px" >
+ 
+    </div> 
+
+    <h3 style="color:#3560af">审批</h3>
+    <p>在内部系统工具中，主管可以审批优惠申请。</p>
+  <div class="row" style="background:#f4f4f7;padding-top:20px;padding-bottom:20px ">
+      
+    
+    <img class="img-responsive center-block" src="img/sale/wireframe3.png" style="max-width:160px" >
+ 
+    </div> 
+
+    <h3 style="color:#3560af">管理</h3>
+    <p>我们通过用例，分析优惠工单的不同状态，以及不同状态下可执行的操作</p>
+
+    <div class="row" style="background:#f4f4f7;padding-top:20px;padding-bottom:20px ">
+        
+      
+      <img class="img-responsive center-block" src="img/sale/ticket.png" >
+   
+      </div> 
+  
+
+
+
+
+</section>
+
+
+ </div>
+
+
+               
+
+
+
+    
+
+  
+
+   
+
+
+
+  
+
+
+
+</section>
+
+
+
+
+</div>
+
+
+
+
+
+
+      
+<!--       <footer class="footersection">
+          <div class="container">
+              <div class="col-xs-12 col-sm-12 col-md-1">
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-10">
+                  <div class="text-center">
+                      <a href="portfolio.html">Back to main page</a>
+                  </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-1">
+              </div>
+          </div>
+
+          <div class="center topmargin bottommargin">
+              <p></p>
+          </div>
+
+      </footer> -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+
+
+
+  </body>
+</html>
