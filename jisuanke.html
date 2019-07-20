@@ -30,9 +30,9 @@
 <div id="header" style="background-image:url(img/jisuanke/head.png);background-size: cover;">
 <div id="bg-overlay" style="background-color: #018a1fde;">
 <div style="padding:100px 50px ">
-  <h2 style="margin-top: 0px; padding-top: 0px;color: #fff">Jisuanke Learning System</h2>
+  <h2 style="margin-top: 0px; padding-top: 0px;color: #fff">在线教学系统</h2>
 <p class="project-intro" style="color: #fff">
-Jiusanke is an online computer science education website. We built an system for learning and developing courses.
+计蒜客是一家提供计算机科学在线课程的网站。我们开发了一套在线教学平台，供教师和学生使用。
 </p>
 <p style="color: #fff">Project time: 2015</p>
  </div>       
@@ -40,33 +40,34 @@ Jiusanke is an online computer science education website. We built an system for
 </div>
 
 
- <section style="background:#" >
-  <P style="margin-bottom: 0px;color: #41b146">Uderstand</p>
-  <h2 style="margin-top: 0px">How people learn and teach in real world?</h2>
-        <p>We need to understand how teaching and learning happens in real world.</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/realworld.png" style="max-width: 600px">
-
-
-   
-  
-  
-
-
-  
-
-
-</section>
  <section style="background:#ffffff" >
-    <P style="margin-bottom: 0px;color: #41b146">Conceptual Design</p>
-      <h2 style="margin-top: 0px">Define the conceptual model of our learning system</h2>
-<p>A course can be abstracted into different conceptual models，with different hierachy of modals</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/model.png" style="max-width: 600px">
+ <div>
+ <div class="col-xs-6">
+    <P style="margin-bottom: 0px;color: #41b146">信息结构</p>
 
-<p>We defined our own course model.</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/model1.png" style="max-width: 200px">
-    <h3 style="color: #41b146">Define the use case</h3>
-    <p>We defined the user cases the system can fullfill as the boundary of the system.</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/usecase.png" style="max-width: 480px">
+   <h2 style="margin-top: 0px">扁平式的课程内容结构</h2>
+<p>一门课程的内容有 2 个层级，分别是章和节。</p>
+
+ </div>
+ <div class="col-xs-6">
+               <img class="img-responsive center-block"  src="img/jisuanke/structure.png" style="max-width: 600px">
+
+ </div>
+ </div>  
+  <div>
+ <div class="col-xs-6">
+    <P style="margin-bottom: 0px;color: #41b146">用户与角色</p>
+
+   <h2 style="margin-top: 0px">3 类用户</h2>
+<p>用户类型分为：学生，教师和管理员</p>
+
+ </div>
+ <div class="col-xs-6">
+               <img class="img-responsive center-block"  src="img/jisuanke/usecase.png" style="max-width: 600px">
+
+ </div>
+ </div>      
+
 
 
  
@@ -75,11 +76,11 @@ Jiusanke is an online computer science education website. We built an system for
 
 </section>
  <section style="background:#fff" >
-  <h2>The design</h2>
-  <h3 style="color: #41b146">Learner end</h3>
+  <h2>设计</h2>
+  <h3 style="color: #41b146">学生端</h3>
   <div class="row" style="margin-bottom: 20px">
 <div class="col-xs-4">
-<p>Immersive design to help learners to be focused.</p>
+<p>沉浸式设计，全屏显示学习内容，减少不必要的干扰。</p>
 
 
 
@@ -93,43 +94,47 @@ Jiusanke is an online computer science education website. We built an system for
   <div class="row">
 
 <br>
-<p>Interactive quiz gives instant feedbacks.</p>
+<p>交互式测试题，给予学生及时的反馈。</p>
 
 
 
 </div>
 <div class="row">
-    <img class="img-responsive center-block"  src="img/jisuanke/learner03.png" style="margin-top: 0px">
+    <img class="img-responsive center-block"  src="img/jisuanke/multichoice_learner.png" style="margin-top: 0px">
 
   
 
 </div>
   
-<h3 style="color: #41b146">Instructor end</h3>
+<h3 style="color: #41b146">教师端</h3>
 
 
 
 
-<p>We make our course structure visually clear.</p>
-<p>Instructor can easily drag and reorder the content.</p>
+<p>编辑后台采用左右结构。左边展示内容结构。教师能够清楚的知道课程结构和当前位置。</p>
+<p>教师可以通过拖拽调整课程结构</p>
 
 
 
 
-<div class="row">
   <img class="img-responsive center-block"  src="img/jisuanke/teacher01.png" style="margin-top: 0px">
+  <br>
+    <br>
+
+  <p>教师可以在测试题模块编辑交互式测试题。</p>
+
   <img class="img-responsive center-block"  src="img/jisuanke/teacher02.png" style="">
 
 
   
-</div>
+
 
 
 
   
-<h3 style="color: #41b146">Adminstrator end</h3>
+<h3 style="color: #41b146">管理员端</h3>
 
-<p>Administrator can manage the courses.</p>
+<p>管理员可以在后台管理课程</p>
 
 
 <div class="row" style="margin-bottom: 20px">
