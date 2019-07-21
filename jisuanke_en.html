@@ -30,9 +30,9 @@
 <div id="header" style="background-image:url(img/jisuanke/head.png);background-size: cover;">
 <div id="bg-overlay" style="background-color: #018a1fde;">
 <div style="padding:100px 50px ">
-  <h2 style="margin-top: 0px; padding-top: 0px;color: #fff">Jisuanke Learning System</h2>
+  <h2 style="margin-top: 0px; padding-top: 0px;color: #fff">Learning management system for Jisuanke.com</h2>
 <p class="project-intro" style="color: #fff">
-Jiusanke is an online computer science education website. We built an system for learning and developing courses.
+Jiusanke is an online computer science education website. We built an system for developing courses.
 </p>
 <p style="color: #fff">Project time: 2015</p>
  </div>       
@@ -40,33 +40,34 @@ Jiusanke is an online computer science education website. We built an system for
 </div>
 
 
- <section style="background:#" >
-  <P style="margin-bottom: 0px;color: #41b146">Uderstand</p>
-  <h2 style="margin-top: 0px">How people learn and teach in real world?</h2>
-        <p>We need to understand how teaching and learning happens in real world.</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/realworld.png" style="max-width: 600px">
-
-
-   
-  
-  
-
-
-  
-
-
-</section>
  <section style="background:#ffffff" >
-    <P style="margin-bottom: 0px;color: #41b146">Conceptual Design</p>
-      <h2 style="margin-top: 0px">Define the conceptual model of our learning system</h2>
-<p>A course can be abstracted into different conceptual models，with different hierachy of modals</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/model.png" style="max-width: 600px">
+ <div>
+ <div class="col-xs-6">
+    <P style="margin-bottom: 0px;color: #41b146">Infomration architechture</p>
 
-<p>We defined our own course model.</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/model1.png" style="max-width: 200px">
-    <h3 style="color: #41b146">Define the use case</h3>
-    <p>We defined the user cases the system can fullfill as the boundary of the system.</p>
-            <img class="img-responsive center-block"  src="img/jisuanke/usecase.png" style="max-width: 480px">
+   <h2 style="margin-top: 0px">2-level structure</h2>
+<p>We defined 2 level structure for a course. A course contains chapters and content.</p>
+
+ </div>
+ <div class="col-xs-6">
+               <img class="img-responsive center-block"  src="img/jisuanke/structure.png" style="max-width: 600px">
+
+ </div>
+ </div>  
+  <div>
+ <div class="col-xs-6">
+    <P style="margin-bottom: 0px;color: #41b146">Users</p>
+
+   <h2 style="margin-top: 0px">three user roles</h2>
+<p>The system supports three user roles: instructor, learner and administrator. </p>
+
+ </div>
+ <div class="col-xs-6">
+               <img class="img-responsive center-block"  src="img/jisuanke/usecase.png" style="max-width: 600px">
+
+ </div>
+ </div>      
+
 
 
  
@@ -75,8 +76,8 @@ Jiusanke is an online computer science education website. We built an system for
 
 </section>
  <section style="background:#fff" >
-  <h2>The design</h2>
-  <h3 style="color: #41b146">Learner end</h3>
+  <h2>设计</h2>
+  <h3 style="color: #41b146">Learner</h3>
   <div class="row" style="margin-bottom: 20px">
 <div class="col-xs-4">
 <p>Immersive design to help learners to be focused.</p>
@@ -99,35 +100,39 @@ Jiusanke is an online computer science education website. We built an system for
 
 </div>
 <div class="row">
-    <img class="img-responsive center-block"  src="img/jisuanke/learner03.png" style="margin-top: 0px">
+    <img class="img-responsive center-block"  src="img/jisuanke/multichoice_learner.png" style="margin-top: 0px">
 
   
 
 </div>
   
-<h3 style="color: #41b146">Instructor end</h3>
+<h3 style="color: #41b146">Instructor</h3>
 
 
 
 
 <p>We make our course structure visually clear.</p>
-<p>Instructor can easily drag and reorder the content.</p>
+<p>Instructor can easily drag and organize the content.</p>
 
 
 
 
-<div class="row">
   <img class="img-responsive center-block"  src="img/jisuanke/teacher01.png" style="margin-top: 0px">
+  <br>
+    <br>
+
+  <p>They can also edit quiz.</p>
+
   <img class="img-responsive center-block"  src="img/jisuanke/teacher02.png" style="">
 
 
   
-</div>
+
 
 
 
   
-<h3 style="color: #41b146">Adminstrator end</h3>
+<h3 style="color: #41b146">Admin</h3>
 
 <p>Administrator can manage the courses.</p>
 
