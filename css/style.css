@@ -21,7 +21,7 @@ h1{
 }
 
 h2{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-family: "Source Han Sans CN","Roboto Slab", serif;
 }
 
@@ -136,6 +136,10 @@ ul{
 .project-intro{
   font-size: 20px;
   font-weight: normal;
+}
+
+.body-section{
+  margin-bottom: 20px;
 }
 
 .inter-section{
