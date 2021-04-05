@@ -17,6 +17,10 @@
   <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="css/animate.css" rel="stylesheet" media="screen">
+  <!-- jquery-->
+  <link href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="js/jquery-3.1.1.min.js"></script>
   </head>
 
   <body style="background:#fff">
@@ -39,7 +43,7 @@
 
 
 <section style="background:#f2f4f6">
-<div class="container">
+<div class="container " >
       <p style="font-weight:300;font-size: 30px;line-height: 45px">我们设计了集成式外呼系统，使得外呼人员可以在一次通话中处理多个业务。在提升工作效率的同时，提升客户体验。</p>
       <br>
 
@@ -52,7 +56,7 @@
 
     <p>我们希望开发新的外呼系统，使一个客户始终由一名外呼人员负责 ，一名外呼人员同时可以多个业务。</p>
  
-    <img class="img-responsive center-block" src="img/call center/concept_cn.png" style="max-width: 100%;">
+    <img class=" animated img-responsive center-block" src="img/call center/concept_cn.png" style="max-width: 100%;visibility: hidden;">
 
 
   </div>
@@ -73,7 +77,10 @@
 
 <br>
 <br>
- <div class="row" style="padding:50px;margin-top:20px;background:#d9edf7">
+
+ <div style="padding:100px;background:#d9edf7">
+ <div class="animated">
+ 
  <p>这个系统的主要干系人有：</p>
 <ul>
         <li><strong>售后业务主管</strong>-需要了解业务目标实现情况</li>
@@ -82,8 +89,8 @@
         <li><strong>外呼专员</strong>- 执行外呼任务</li>
   
     </ul>
-
-
+</div>
+</div>
 
 </div>
 </section> 
@@ -152,7 +159,7 @@
                   <br>
 
                    <div style="background-color:#f2f4f6;padding:50px 0">
-                        <img class="img-responsive center-block" src="img/call center/profile_layout.png" style="max-width:50%;">
+                        <img class="img-responsive center-block animated" src="img/call center/profile_layout.png" style="max-width:50%;">
             </div>
                
 
@@ -186,16 +193,37 @@
               <br>
               <br>
               <p>根据工作文档，我们把外呼专员需要填写的客户问卷表单进行了改进</p>
-               <img class="img-responsive center-block" src="img/call center/question.png" style="max-width: 100%;">
+               <img class="img-responsive center-block" src="img/call center/survey.png">
             </div>
-         <div class="row" style="padding:50px;margin-top:20px;background:#d9edf7">
-<h3 style="text-align: center;">部分调研记录</h3>
+         <div style="padding:50px;margin-top:20px;background:#d9edf7">
+<span style="text-align: center;font-size: 20px">部分调研记录</h3>
+<br>
+<br>
                           <img class="img-responsive center-block" src="img/call center/user_study_record.png" style="max-width: 50%;">
 
 
 
 
                 </div>
+                <div style="padding:50px;margin-top:20px;background:#f9faf6">
+<span style="font-size: 20px">外呼专员如何在 excel 上管理任务</span>
+<br>
+<br>
+<ul>
+<li>选择客户时会考虑业务到期的截止日期。日期近的优先处理。</li>
+<li>任务大致分为 2 类：已经获得结果，可以发给业务团队和未获得结果，还需要联系。</li>
+<li>还需联系的客户需要被筛出。</li>
+</ul>
+<br>
+<br>
+      
+                         
+
+
+
+
+                </div>
+
             
 </div>
             
@@ -304,7 +332,33 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
+<script>
+     $(document).ready(function() {
+        $(window).on("scroll", function(){
+        $('.animated').each(function(){
+          
+      if($(this).offset().top<$(window).scrollTop()+$(window).height()){
+         $(this).css('visibility','visible');
+         $(this).addClass('fadeInDown');
+      }
 
+        
+      else 
+          $('this').removeClass('fadeIn');
+
+      
+        
+      
+     
+    
+  });
+      });
+     
+
+      
+     
+     });
+  </script>
 
 
 
