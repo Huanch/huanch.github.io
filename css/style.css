@@ -22,11 +22,11 @@ h1{
 
 h2{
   margin-bottom: 40px;
-  font-family: "Source Han Sans CN","Roboto Slab", serif;
+  font-family: "Source Han Sans CN","Roboto Slab";
 }
 
 h3{
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-weight:bold;
   color: #555;
   font-size: 18px;
