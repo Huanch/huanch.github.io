@@ -30,7 +30,7 @@
   <div id="bg-overlay" style="padding-top:100px;padding-bottom:100px;background-color: #0e7bb194;">
   <div class="container">
     <h2>Call center 1.0</h2>
-     <h2>Support the transformation of call center</h2>
+     <h2>Increase the operational efficiency</h2>
         <h3>My role</h3>
 <p>Requirement analysis, ux research, interface design</p><br>
         <p>Project time：2018.12</p>
@@ -65,7 +65,7 @@
 <div class=" col-md-3"></div>
 <div class="col-md-6">
 <span>The background</span>
-<h2>Our call center needed a call center system </h2>
+<h2>We need a system to support the transformation of outbound customer interaction. </h2>
 
 <p>In our call center, each agent served a specific business line. If a customer was involved with more than one business line, the customer had to be reached by more than one agent with multiple phone calls.</p>
 <p>We needed a call center system, which could aggregate all tasks involved with one customer in one place, so that an agent can handel multiple cases in one call and a customer can recieve less calls from the company. </p>
@@ -91,24 +91,25 @@
   <br>
   <br>
 <p>The users/ stakeholders and their influnce to the system are：</p>
-<ul>
- <li><strong>After-sell manager</strong>-manage the after sale business.</li>
- <li><strong>After-sell business operator</strong>- assign call tasks to call center team.</li>
+<ul style="">
+ <li><strong>Business line manager</strong>- He/She cares about how his/her business goes.They expect call center deliver customer information in time.</li>
+
+ <li><strong>Business line operator</strong>- Assign customer list and customer inquiry to call center team.</li>
        
        
-    <li><strong>Call center team manager</strong>- assigne call tasks to agents.</li>
-        <li><strong>Call center agent</strong>-excute the call tasks</li>
+    <li><strong>Call center team manager</strong>- assign customers to agents with the system.</li>
+        <li><strong>Call center agent</strong>-handle the customer inquiry through phone call with the system.</li>
   
     </ul>
 <br>
-<h3>The business cases</h3>
+<h3>The business cases of MVP</h3>
 <br>
 <p>The MVP covers the most important business cases from call center team manager and call center agent.</p>
 
       
      <p><strong>Call center team manager</strong></p>
     <ul>
-    <li>Assign tasks to agents.</li>
+    <li>Distribute customers to agents.</li>
     
        
   
@@ -132,8 +133,8 @@
 <div class="row">
 <div class="col-md-3"></div>
 <div class="col-md-6">
-<section>The concept</section>
-   <h2>We defined the solution concept on whiteboard</h2>
+<section>Solution exploration</section>
+   <h2>We discussed ideas on whiteboard</h2>
                 
                 <p>With product managers we discuss requirments and tried different solutions on whiteboard.</p>
                          <img class="img-responsive center-block" src="img/call center/whiteboard.png">
@@ -149,32 +150,23 @@
 <div class="row">
 <div class="col-md-3"></div>
 <div class="col-md-6">
-<section>The design challenge</section>
+<section>The problem space</section>
    <h2>Design for efficieny and adaptability</h2>
-                
+        <p>After we have defined the basic structure of the system, we started to explore the UI solutions and following problems were what we need to solve in the project:</p>  
+        <ul style="">
+ <li>How might we help the agent to identify which customer to call efficiently?</li>
+ <li>How might we make the agent to solve the cases in time?</li>
+  <li>How might we make the agent interact and update feedback at the same efficently?  </li>
+
+    </ul>      
 
 
                 
-                  <p> The design goal in the project is to make the system efficient to use and easy to be adapted. For reaching the goal, we need to solve following design challenges:</p>
+          
                 
-                  
-                <ul>
-                        <li><strong>How might we help agent better manage the tasks</strong>- the system should adapt user’s working habit and mental modal</li>
-                     
-                        <li><strong>How might we make the agent working more smoonthly</strong>- the system can be enlarged for  other business cases in future</li>
-                        <li><strong>How might we make a new agent adapt to job fast</strong>- the employee replacement is frequent in call center.</li>
-                  
-                    </ul>
-
-                      <p>We defined our basic design principle while exploring possiblle solutions:</p>
                 
-                  
-                <ul>
-                        <li><strong>contextual</strong>- the system should adapt user’s working habit and mental modal</li>
-                     
-                        <li><strong>Scable</strong>- the system can be enlarged for  other business cases in future</li>
-                  
-                    </ul>
+                
+               
                 
                 
               
@@ -191,8 +183,8 @@
     <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
-    <section>The reasearch</section>
-            <h2>A field study to understand deeply how agents work</h2>
+    <section>Field study</section>
+            <h2>Learn how agents work and co-write customer inquiry</h2>
             
          
             
@@ -202,7 +194,7 @@
                     
                <br>
                <br>
-                        <img class="img-responsive center-block" src="img/call center/field.jpeg">
+                        <img class="img-responsive center-block" src="img/call center/survey.png">
 
                   
 
@@ -216,7 +208,7 @@
      	<div class="col-md-3"></div>
      	<div class="col-md-6">
      		 <div class="row" style="padding:50px;margin-top:20px;background:#d9edf7">
-            <p><strong>Outcome of the study</strong></p>
+            <p><strong>Factors that affact the agent to pick which customer to interact </strong></p>
             <br>
 
                    
@@ -226,8 +218,9 @@
                            
                              
                 <ul>
-                <li>I learned that the agents piorize tasks with following factors:the severity, appointed or not, in processing or not. </li>
-                <li>I validated the survey with agent.</li>
+                <li>  Severity</li>
+                <li>  Appointed for today or not</li>
+               
               
                       
 
